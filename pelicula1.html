@@ -7,6 +7,8 @@
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
      <link href="css/bootstrap.min.css" rel="stylesheet">
 	 <link href="css/style.css" rel="stylesheet">
+    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="script/js-image-slider.js" type="text/javascript"></script>
 <title>El lado bueno de las cosas</title>
 </head>
 
@@ -22,13 +24,13 @@
                 </div>
 			</header>
 		<img src="Images/1/caratula.jpg" alt = ""  />
-		<!--Trailer, botón en forma de play-->
-		<a href="http://www.youtube.com/watch?v=X61g-9ArR7o" target="_blank">Trailer de la película</a>
+		<!--Trailer, botï¿½n en forma de play-->
+		<a href="http://www.youtube.com/watch?v=X61g-9ArR7o" target="_blank">Trailer de la pelï¿½cula</a>
 		
 		<h2>Director</h2> <p>David O. Russell</p>
 
 		<h2>Reparto</h2> 
-		<!--fotos de los protagonistas en círculos-->
+		<!--fotos de los protagonistas en cï¿½rculos-->
 		<img src="Images/1/protagonista1.jpg" alt = ""  class="img-circle"/>
 		<img src="Images/1/protagonista2.jpg" alt = ""  class="img-circle"/>
 		<img src="Images/1/protagonista3.jpg" alt = ""  class="img-circle"/>
@@ -38,14 +40,14 @@
 		Paul Herman, Brea Bee </p>
 
 		<h2>Sinopsis</h2>
-		<p> Tras pasar ocho meses en una institución mental por agredir al amante de su mujer, Pat (Bradley Cooper)
+		<p> Tras pasar ocho meses en una instituciï¿½n mental por agredir al amante de su mujer, Pat (Bradley Cooper)
 		vuelve con lo puesto a vivir en casa de sus padres (Robert De Niro y Jacki Weaver). Determinado a tener una
-		actitud positiva y recuperar a su ex-mujer, el mundo de Pat se pone del revés cuando conoce a Tiffany (Jennifer Lawrence),
+		actitud positiva y recuperar a su ex-mujer, el mundo de Pat se pone del revï¿½s cuando conoce a Tiffany (Jennifer Lawrence),
 		una chica con ciertos problemas y no muy buena fama en el barrio. A pesar de su mutua desconfianza inicial, entre ellos pronto
-		se desarrollará un vínculo muy especial que les ayudará a encontrar en sus vidas el lado bueno de las cosas.</p>
+		se desarrollarï¿½ un vï¿½nculo muy especial que les ayudarï¿½ a encontrar en sus vidas el lado bueno de las cosas.</p>
 		<h2>Trailer</h2>
 
-		<a href="http://www.youtube.com/watch?v=X61g-9ArR7o" target="_blank">Trailer de la película</a><!--Boton en forma de play-->
+		<a href="http://www.youtube.com/watch?v=X61g-9ArR7o" target="_blank">Trailer de la pelï¿½cula</a><!--Boton en forma de play-->
 
 
 		<h2>Comentarios</h2>
@@ -53,20 +55,36 @@
 
 		</textarea>
 
-		<h2>Califique la película (estrellitas)</h2>
-		
-		<h2>Galería de fotos</h2>
-		<div class="gallery"> <br>
-
-		<img src="Images/1/image1.jpg"  alt = "" />
-		<img src="Images/1/image2.jpg"  alt = "" />
-		<img src="Images/1/image3.jpg" class="start"  alt = "" />
-		<img src="Images/1/image4.jpg" alt = ""  />
-		<img src="Images/1/image5.jpg"  alt = "" />
-		<img src="Images/1/image6.jpg"  alt = "" />
-		<img src="Images/1/image7.jpg"  alt = "" />
-		</div>
-
+		<h2>Califique la pelï¿½cula (estrellitas)</h2>
+		<div class="row"> 
+		<h2>Galerï¿½a de fotos</h2>
+        <div id="sliderFrame">
+        <div id="ribbon"></div>
+        <div id="slider">
+            <a class="lazyImage" href="images/1/image1.jpg" style="height:306px; width:700px"  title="Pure Javascript. No jQuery. No flash.">Plain Javascript Slider</a>
+            <a class="lazyImage" href="images/1/image2.jpg" title="#htmlcaption5">Lazy Loading Image</a>
+            <a class="lazyImage" href="images/1/image3.jpg" title="Light weight Image Slider">Light weight Image Slider</a>
+            <a class="lazyImage" href="images/1/image4.jpg" title="Fine tuned. Sleek & Smooth">Fine tuned. Sleek & Smooth</a>
+            <a class="lazyImage" href="images/1/image5.jpg" title="Easy-to-Use Slider">Easy-to-Use Slider</a>
+        </div>
+        <div style="display: none;">
+            <div id="htmlcaption3">
+                <em>HTML</em> caption. Back to <a href="http://www.menucool.com/">Menucool</a>.
+            </div>
+            <div id="htmlcaption5">
+                Smart Lazy Loading Image
+            </div>
+        </div>
+                
+        <!--thumbnails-->
+        <div id="thumbs">
+            <div class="thumb"><img src="images/1/image1.jpg" /></div>
+            <div class="thumb"><img src="images/1/image2.jpg" /></div>
+            <div class="thumb"><img src="images/1/image3.jpg" /></div>
+            <div class="thumb"><img src="images/1/image4.jpg" /></div>
+            <div class="thumb"><img src="images/1/image5.jpg" /></div>
+        </div>
+    </div>
 		<button>comprar</button>
 
 		<div class="row">
@@ -75,8 +93,7 @@
             </div>
         </div>
 		</div>
-	<script language="javascript" src="./script/jquery.slidingGallery-1.2.min.js"></script>
-	<script language="javascript" src="./script/jquery.slidingGallery-1.2.js"></script>
+
 	<script language="javascript" src="./script/script.js"></script>
 	</body>
 

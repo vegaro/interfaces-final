@@ -7,8 +7,16 @@
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
      <link href="css/bootstrap.min.css" rel="stylesheet">
 	 <link href="css/style.css" rel="stylesheet">
-    <link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
-    <script src="script/js-image-slider.js" type="text/javascript"></script>
+     <link rel="stylesheet" href="css/responsiveslides.css">
+    <script language="javascript" src="js/responsiveslides.min.js"></script>
+     <script>
+        $(function () {
+        $("#slider3").responsiveSlides({
+            manualControls: '#slider3-pager',
+            maxwidth: 540
+          });
+        });
+     </script>
 <title>El lado bueno de las cosas</title>
 </head>
 
@@ -56,35 +64,23 @@
 		</textarea>
 
 		<h2>Califique la pel�cula (estrellitas)</h2>
-		<div class="row"> 
-		<h2>Galer�a de fotos</h2>
-        <div id="sliderFrame">
-        <div id="ribbon"></div>
-        <div id="slider">
-            <a class="lazyImage" href="images/1/image1.jpg" style="height:306px; width:700px"  title="Pure Javascript. No jQuery. No flash.">Plain Javascript Slider</a>
-            <a class="lazyImage" href="images/1/image2.jpg" title="#htmlcaption5">Lazy Loading Image</a>
-            <a class="lazyImage" href="images/1/image3.jpg" title="Light weight Image Slider">Light weight Image Slider</a>
-            <a class="lazyImage" href="images/1/image4.jpg" title="Fine tuned. Sleek & Smooth">Fine tuned. Sleek & Smooth</a>
-            <a class="lazyImage" href="images/1/image5.jpg" title="Easy-to-Use Slider">Easy-to-Use Slider</a>
+		<div class="row">
+		<div class="col-md-12">
+		  <h2>Galer�a de fotos</h2>
+            <ul class="rslides" id="slider3">
+                <li><img src="images/1/image1.jpg" alt=""></li>
+                <li><img src="images/1/image2.jpg" alt=""></li>
+                <li><img src="images/1/image3.jpg" alt=""></li>
+            </ul>
+
+    <!-- Slideshow 3 Pager -->
+            <ul id="slider3-pager">
+                <li><a href="#"><img src="images/1/thb/image1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1/thb/image2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1/thb/image3.jpg" alt=""></a></li>
+            </ul>
+           </div>
         </div>
-        <div style="display: none;">
-            <div id="htmlcaption3">
-                <em>HTML</em> caption. Back to <a href="http://www.menucool.com/">Menucool</a>.
-            </div>
-            <div id="htmlcaption5">
-                Smart Lazy Loading Image
-            </div>
-        </div>
-                
-        <!--thumbnails-->
-        <div id="thumbs">
-            <div class="thumb"><img src="images/1/image1.jpg" /></div>
-            <div class="thumb"><img src="images/1/image2.jpg" /></div>
-            <div class="thumb"><img src="images/1/image3.jpg" /></div>
-            <div class="thumb"><img src="images/1/image4.jpg" /></div>
-            <div class="thumb"><img src="images/1/image5.jpg" /></div>
-        </div>
-    </div>
 		<button>comprar</button>
 
 		<div class="row">
@@ -92,9 +88,6 @@
                 <h2>Mapa</h2>
             </div>
         </div>
-		</div>
-
-	<script language="javascript" src="./script/script.js"></script>
 	</body>
 
 </html>

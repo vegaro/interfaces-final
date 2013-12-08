@@ -5,61 +5,107 @@
  
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-     
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/responsiveslides.css">
+    <script language="javascript" src="js/responsiveslides.min.js"></script>
+     <script>
+        $(function () {
+        $("#slider3").responsiveSlides({
+            manualControls: '#slider3-pager',
+            maxwidth: 540
+          });
+        });
+     </script>
 <title>Una cuestión de tiempo</title>
 </head>
 
 <body>
-<!--fotos de los protagonistas en círculos-->
-<img src="Images/3/caratula.jpg" alt = ""  />
+		<div class="container">
+			<header class="col-md-12">
+				<div class="row">
+                    <div id="nombre_cine" class="col-md-6"> 
+                        <h1 class="ribbon">
+                           <strong class="ribbon-content">Una cuestión de tiempo</strong>
+                        </h1>
+                    </div>
+                </div>
+			</header>
+		<div class="col-md-12">
+		<div class="col-md-4">
+		<img src="Images/3/caratula.jpg" alt = ""  /><br>
+		<!--Trailer, botón en forma de play-->
+		<a href="http://www.youtube.com/watch?v=5DQAZtFHLEA" target="_blank">Trailer: Una cuestión de tiempo</a>
+		</div>
+		<div class="col-md-8">
+		<div class="row">
+		<h2>Director</h2> 
+		<p>Richard Curtis</p>
+		</div>
+		<div class="row">
+		<h2>Reparto</h2> 
+		<!--fotos de los protagonistas en círculos-->
+		<img src="Images/3/protagonista1.jpg" alt = ""  class="img-circle"/>
+		<img src="Images/3/protagonista2.jpg" alt = ""  class="img-circle"/>
+		<img src="Images/3/protagonista3.jpg" alt = ""  class="img-circle"/>
+		<p> Domhnall Gleeson, Rachel McAdams, Bill Nighy, Tom Hollander, Margot Robbie, 
+			Rowena Diamond, Vanessa Kirby, Lindsay Duncan, Matt Butcher, Lee Asquith-Coe 
+		</p>
+		</div>
+		<div class="row">
+			<h2>Sinopsis</h2>
+			<p>Tim Lake (Domhnall Gleeson) es un joven de 21 años que descubre que puede viajar en el tiempo. 
+				Su padre (Bill Nighy) le cuenta que todos los hombres de la familia han tenido desde siempre ese don, 
+				el de regresar en el tiempo a un momento determinado, una y otra vez, hasta conseguir hacer "lo correcto". 
+				Así pues, Tim decide volver al pasado a intentar conquistar a Mary (Rachel McAdams), la chica de sus sueños.
+			</p>		
+		</div>
+		<div class="row">
+		<h2>Comentarios</h2>
+		<textarea rows="5" cols="50"></textarea>
+		</div>
+		<div class="row"> 
+		<h2>Califique la pel�cula (estrellitas)</h2>
+		</div>
+	</div>
+	</div>
+		<div class="row">
+		<div class="col-md-12">
+		  <h2>Galer�a de fotos</h2>
+            <ul class="rslides" id="slider3">
+                <li><img src="images/3/images1.jpg" alt=""></li>
+                <li><img src="images/3/images2.jpg" alt=""></li>
+                <li><img src="images/3/images3.jpg" alt=""></li>
+				<li><img src="images/3/images4.jpg" alt=""></li>
+                <li><img src="images/3/images5.jpg" alt=""></li>
+                <li><img src="images/3/images6.jpg" alt=""></li>
+				<li><img src="images/3/images7.jpg" alt=""></li>
+            </ul>
 
-<header> Una cuestión de tiempo </header>
+    <!-- Slideshow 3 Pager -->
+            <ul id="slider3-pager">
+                <li><a href="#"><img src="images/3/thb/images1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3/thb/images2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3/thb/images3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3/thb/images4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3/thb/images5.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3/thb/images6.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/3/thb/images7.jpg" alt=""></a></li>
+			</ul>
+           </div>
+        </div>
+        
+		<button>comprar</button>
 
-<h1>Director</h1> <p>Richard Curtis</p>
+		<div class="row">
+            <div class="col-md-12">
+                <h2>Mapa</h2>
+            </div>
+        </div>
+		</div>
+	</div>
 
-<h1>Reparto</h1> 
-	<!--fotos de los protagonistas en círculos-->
-	<img src="Images/3/protagonista.jpg" alt = ""  />
-	<img src="Images/3/protagonista2.jpg" alt = ""  />
-	<img src="Images/3/protagonista3.jpg" alt = ""  />
-   <p> Domhnall Gleeson, Rachel McAdams, Bill Nighy, Tom Hollander, Margot Robbie, 
-   Rowena Diamond, Vanessa Kirby, Lindsay Duncan, Matt Butcher, Lee Asquith-Coe </p>
-
-<h1>Sinopsis</h1>
-   <p> Tim Lake (Domhnall Gleeson) es un joven de 21 años que descubre que puede viajar en el tiempo. 
-   Su padre (Bill Nighy) le cuenta que todos los hombres de la familia han tenido desde siempre ese don, 
-   el de regresar en el tiempo a un momento determinado, una y otra vez, hasta conseguir hacer "lo correcto". 
-   Así pues, Tim decide volver al pasado a intentar conquistar a Mary (Rachel McAdams), la chica de sus sueños.  </p>
-
-   <h1>Trailer</h1>
-
-<a href="http://www.youtube.com/watch?v=5DQAZtFHLEA" target="_blank">Trailer de la película</a><!--Boton en forma de play-->
-
-
-<h1>Comentarios</h1>
-	<textarea rows="10" cols="30">
-
-	</textarea>
-<h1>Califique la película (estrellitas)</h1>
-
-<h1>Galería de fotos</h1>
-    <div class="gallery"> <br>
-
-		<img src="Images/3/images1.jpg"  alt = "" />
-		<img src="Images/3/images2.jpg"  alt = "" />
-		<img src="Images/3/images3.jpg" class="start"  alt = "" />
-		<img src="Images/3/images4.jpg" alt = ""  />
-		<img src="Images/3/images5.jpg"  alt = "" />
-		<img src="Images/3/images6.jpg"  alt = "" />
-		<img src="Images/3/images7.jpg"  alt = "" />
-    </div>
-
-<button>comprar</button>
-
-<h1>Mapa</h1>
- <script language="javascript" src="./script/jquery.slidingGallery-1.2.min.js"></script>
-	<script language="javascript" src="./script/jquery.slidingGallery-1.2.js"></script>
 	<script language="javascript" src="./script/script.js"></script>
-</body>
+	</body>
 
 </html>

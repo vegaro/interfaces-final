@@ -57,3 +57,10 @@ header {
 body {
     background-color: transparent;
 }
+
+.datos {
+	position: absolute;
+		top: 50px;
+		left: 310px;
+		margin: 100px;
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Venta de entradas</title>
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+		<div class="row">
+            <header class="col-md-12">
+                <div class="row">
+                    <div id="nombre_cine" class="col-md-6"> 
+                        <h1 class="ribbon">
+                           <strong class="ribbon-content">Venta de entradas</strong>
+                        </h1>
+                    </div>
+                </div>
+            </header>
+        </div>
+  
+ <fieldset><legend>Datos del contacto:</legend>
+<form action="">
+<p>Nombre:</p> <input type="text" name="Nombre"><br>
+<p>Primer apellido:</p> <input type="text" name="Primer apellido" action="" required><br>
+<p>Segundo apellido:</p><input type="text" name="Segundo apellido" action="" required><br>
+<p>Email:</p><input type="text" name="mail" action="" placeholder="nombre@gmail.com"required><br>
+<p>Teléfono:</p><input type="text" name="telefono" action="" placeholder="+34-xxxxxxxxx"required><br>
+</fieldset>
+
+<fieldset><legend>Datos de la tarjeta:</legend>
+<p>Número de tarjeta:</p> <input type="text" name="número" action="" placeholder="xxxx-xxxx-xxxx-xxxx"required><br>
+<p>Fecha de caducidad:</p>  
+<label for="tabla">Mes:</label> 
+<select id="tabla" name="tabla">
+<option value="" selected="selected">- seleccione -</option>
+  <option value="numero">1</option>
+  <option value="numero">2</option>
+  <option value="numero">3</option>
+  <option value="numero">4</option>
+  <option value="numero">5</option>
+  <option value="numero">6</option>
+  <option value="numero">7</option>
+  <option value="numero">8</option>
+  <option value="numero">9</option>
+  <option value="numero">10</option>
+  <option value="numero">11</option>
+  <option value="numero">12</option>
+</select>
+
+<label for="tabla">Año:</label> 
+<select id="tabla" name="tabla">
+  <option value="" selected="selected">- seleccione -</option>
+  <option value="numero">13</option>
+  <option value="numero">14</option>
+  <option value="numero">15</option>
+  <option value="numero">16</option>
+  <option value="numero">17</option>
+  <option value="numero">18</option>
+  <option value="numero">19</option>
+  <option value="numero">20</option>
+  <option value="numero">21</option>
+  <option value="numero">22</option>
+  <option value="numero">23</option>
+</select>
+<br>
+<img src="./Images/icono.jpg" alt=" " title="icono"/>
+<p>Código de seguridad (CVV) </p> <input type="text" name="codigo" placeholder="3 números, parte posterior de la tarjeta" required>
+</fieldset>
+
+<br>
+
+Acepto las condiciones generales<input type="checkbox" name="condicion" value="" required>
+</form>
+<br>
+
+<form action="" method="post" id="form1">
+     <input type="submit" value="Comprar"> 
+   </form>
+  </div>
+</body>
+</html>

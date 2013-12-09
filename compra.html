@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Venta de entradas</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+	
+	<!-- En firefox no sale el calendario-->
+	<script>
+function multipl(){document.F1.T3.value=(document.F1.T1.value)*(document.F1.T2.value)}
+</script>
+</head>
+<body>
+<div class="container">
+        <div class="row">
+            <header class="col-md-12">
+                <div class="row">
+                    <div id="nombre_cine" class="col-md-6"> 
+                        <h1 class="ribbon">
+                           <strong class="ribbon-content">Horario y venta de entradas</strong>
+                        </h1>
+                    </div>
+                </div>
+            </header>
+        </div> <br>	
+<label for="tabla">Elige su cine:</label> <br/>
+<select id="tabla" name="tabla">
+  <option value="" selected="selected">- seleccione -</option>
+  <option value="cine">Cinesa Heron City</option>
+  <option value="Cine">Cinesa Proyecciones</option>
+  <option value="Cine">Cines Principe Pio</option>
+  <option value="Cine">Cine Roxy A</option>
+</select>
+<br>
+<p>Seleccione el día</p>
+<form action="" method="post" id="form1">
+<input type="date" ></p>
+</form>
+
+
+<!--esto tiene que estas escondido y cuando se seleccion el dia que salga-->
+
+<p>Seleccione la sesión</p>
+
+
+<input type="radio" name="hora" value="hora">16:00
+<input type="radio" name="hora" value="hora">18:00
+<input type="radio" name="hora" value="hora">20:00
+<input type="radio" name="hora" value="hora">23:00
+
+
+
+<p>Tipo de entrada: no numeradas</p>
+
+<p>¿Cuántas entradas quieres?</p>
+
+<form name="F1">
+<p>Precio unitario</p>
+<input type="text" name="T1" size="20" value="8.90"> <br>
+<p>¿Cuantaa entradas desea?</p> <h2>Introduce el número de entradas que deese</h2>
+<input type="text" name="T2" size="20" value="" placeholder="número" required>
+
+<select size="1" onclick="multipl()">	<br>
+<option value="seleciona">Continuar</option>
+</select>
+
+<br>
+<br>
+<fieldset><legend>El total a pagar (impuestos incluidos):</legend>
+
+<input type="text" name="T3" size="20" value=""> Euros.
+</fieldset>
+</form>
+
+
+<!--esto tiene que ir chiquitito-->
+<h2>Al realizar la compra online no se pueden relizar ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial*</h2>
+<form action="" method="post" id="form1">
+	   <input type="submit" value="Comprar"> <!-- Al darle al boton me lleva a la otra página o en su defecto que se despliegue y salga la informacion de la venta de las entradas-->
+   
+</form>
+
+</body>
+</html>

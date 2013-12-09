@@ -22,64 +22,70 @@
                 </div>
             </header>
         </div>
-        <div class="col-md-6">	
-            <div class="form-group">
-                <label for="tabla">Elige el cine</label>
-                <select class="form-control" id="tabla" name="tabla">
-                    <option value="" disabled selected>- seleccione -</option>
-                    <option value="heron">Cinesa Heron City</option>
-                    <option value="cinesa-proy">Cinesa Proyecciones</option>
-                    <option value="principepio">Cines Principe Pio</option>
-                    <option value="roxya">Cine Roxy A</option>
-                </select>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="fecha">Seleccione el día</label>
-                        <input type="text" size="16" class="form-control datepicker" name="fecha" id="fecha" data-date-format="dd/mm/yyyy" data-date-weekstart="1">
+        <div class="row">
+            <form name="input" action="venta.html">
+                <div class="row col-md-12">
+                    <div class="col-md-6">    
+                        <div class="form-group">
+                            <label for="tabla">Elige el cine</label>
+                                <select class="form-control" id="tabla" name="tabla" required>
+                                    <option value="" disabled selected>- seleccione -</option>
+                                    <option value="heron">Cinesa Heron City</option>
+                                    <option value="cinesa-proy">Cinesa Proyecciones</option>
+                                    <option value="principepio">Cines Principe Pio</option>
+                                    <option value="roxya">Cine Roxy A</option>
+                                </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fecha">Seleccione el día</label>
+                                    <input type="text" size="16" class="form-control datepicker" name="fecha" id="fecha" data-date-format="dd/mm/yyyy" data-date-weekstart="1" readonly required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="tabla">Seleccione sesion</label>
+                                        <select class="form-control" id="tabla" name="tabla" required>
+                                            <option value="" disabled selected>- seleccione -</option>
+                                            <option value="16:00">16:00</option>
+                                            <option value="18:00">18:00</option>
+                                            <option value="20:00">20:00</option>
+                                            <option value="23:00">23:00</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tabla">Seleccione el numero de entradas</label>
+                            <select class="form-control" id="noentradas" name="noentradas" required>
+                                <option value="" disabled selected>- seleccione -</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>     
+                    <div id="factura" class="col-md-4 col-md-offset-1">
+                        <div class="row">
+                            <h3>Precio unitario</h3>
+                            <p class="precios"><span id="precio">8.90</span>* €</p>
+                            <h3>Precio total (impuestos incluidos)</h3>
+                            <p class="precios"><span id="precio-total"></span> €</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="tabla">Seleccione sesion</label>
-                        <select class="form-control" id="tabla" name="tabla">
-                            <option value="" disabled selected>- seleccione -</option>
-                            <option value="16:00">16:00</option>
-                            <option value="18:00">18:00</option>
-                            <option value="20:00">20:00</option>
-                            <option value="23:00">23:00</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="tabla">Seleccione el numero de entradas</label>
-                <select class="form-control" id="tabla" name="tabla">
-                    <option value="" disabled selected>- seleccione -</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-            </div>
+                <div class="col-md-12">
+                    <span id="condiciones">
+                        <p>*Al realizar la compra online no se puede obtener ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial)</p>
+                    </span>
+                    <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
+                </div>   
+            </form>
         </div>
-        <div id="factura" class="col-md-6">
-            <div class="row">
-                <h3>Precio unitario</h3>
-                <p id="precio">8.90</p>
-            </div>
-        </div>
-
-
-<!--esto tiene que ir chiquitito-->
-<h2>Al realizar la compra online no se pueden relizar ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial*</h2>
-<form action="" method="post" id="form1">
-	   <input type="submit" value="Comprar"> <!-- Al darle al boton me lleva a la otra página o en su defecto que se despliegue y salga la informacion de la venta de las entradas-->
-   
-</form>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/compra.js"></script>

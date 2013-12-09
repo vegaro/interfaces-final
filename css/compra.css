@@ -1,4 +1,13 @@
-#precio{
+.precios{
     text-align: right;
     font-size: large;
+}
+#factura{
+    background: rgba(105, 178, 105, 0.50);
+    margin-top: 15px;
+    border:2px solid black;
+    border-radius: 15px;
+}
+#condiciones{
+    font-size: small;
 }

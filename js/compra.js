@@ -6,3 +6,7 @@ $('.datepicker').datepicker({
     return date.valueOf() < now.valueOf() ? 'disabled' : '';
   }
 });
+
+$('select#noentradas').on('change',function(){
+    $('#precio-total').text((parseFloat($('#precio').html())*this.value).toFixed(2));
+});

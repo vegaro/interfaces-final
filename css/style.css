@@ -6,8 +6,6 @@ html {
     background-size: cover;
 }
 
-
-
 header {
     height: 150px;
     background-image: url('../img/cines/cinesa.jpg');
@@ -121,3 +119,52 @@ body {
   text-align: center;
   width: 100%;
   }
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -20px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 20px; 
+}
+.site-footer {
+  background: #222;
+  color: #999;
+  text-align: center;
+}
+
+.packery {
+  background: transparent;
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.item {
+  width: 25%;
+  height: 60px;
+  float: left;
+  background: #C09;
+  border: 4px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.item.gigante {
+  width: 100%;
+  background: #C90;
+  height: 90px;
+}

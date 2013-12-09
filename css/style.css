@@ -170,5 +170,5 @@ html, body {
 }
 
 .item > *{
-  visibility: hidden;
+  display: none;
 }

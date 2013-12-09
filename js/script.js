@@ -10,10 +10,9 @@ $( document ).ready( function() {
     if ( !classie.has( target, 'item' ) ) {
       return;
     }
-    $(target).children().show();
     var isGigante = classie.has( target, 'gigante' );
     classie.toggleClass( target, 'gigante' );
-  
+    $(target).children().toggle();
     if ( isGigante ) {
       // if shrinking, just layout
       pckry.layout();
@@ -22,7 +21,6 @@ $( document ).ready( function() {
     } else {
       // if expanding, fit it
       pckry.fit( target );
-      $(target).children().show();
     }
   });
 });

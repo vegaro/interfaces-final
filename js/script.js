@@ -10,16 +10,19 @@ $( document ).ready( function() {
     if ( !classie.has( target, 'item' ) ) {
       return;
     }
-  
+    $(target).children().show();
     var isGigante = classie.has( target, 'gigante' );
     classie.toggleClass( target, 'gigante' );
   
     if ( isGigante ) {
       // if shrinking, just layout
       pckry.layout();
+
+
     } else {
       // if expanding, fit it
       pckry.fit( target );
+      $(target).children().show();
     }
   });
 });

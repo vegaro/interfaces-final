@@ -10,13 +10,14 @@ $( document ).ready( function() {
     if ( !classie.has( target, 'item' ) ) {
       return;
     }
-  
     var isGigante = classie.has( target, 'gigante' );
     classie.toggleClass( target, 'gigante' );
-  
+    $(target).children().toggle();
     if ( isGigante ) {
       // if shrinking, just layout
       pckry.layout();
+
+
     } else {
       // if expanding, fit it
       pckry.fit( target );

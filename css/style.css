@@ -168,3 +168,11 @@ html, body {
   background: #C90;
   height: 90px;
 }
+
+.requerido{
+    font-weight: bold; 
+}
+.requerido:after{
+    content: "*";
+    color: red;
+}

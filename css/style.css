@@ -156,7 +156,7 @@ html, body {
 }
 
 .item {
-  width: 19.2%;
+  width: 150px;
   height: 200px;
   float: left;
   background: #C09;
@@ -174,10 +174,16 @@ html, body {
   display: none;
 }
 
-.requerido{
-    font-weight: bold; 
+.packery-img{
+  height: 100%;
+  float: left;
 }
-.requerido:after{
-    content: "*";
-    color: red;
+.gigante{
+  background: rgba(105, 178, 105, 0.75) !important;
+}
+
+.flecha-cerrar{
+  float:bottom;
+  float:right;
+  margin: 3px;
 }

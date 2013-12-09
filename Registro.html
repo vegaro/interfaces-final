@@ -19,22 +19,42 @@
                 </div>
             </header>
         </div> <br>	
-		<form action="">
+		<form role="form" action="">
 			<fieldset>
-				<legend> Regístrese aquí </legend>
-				<label for="form-nombre" class="requerido"> Nombre: </label> 
-				<input type="text" name="nombre" placeholder="Nombre" required><br><br>
+				<legend><strong> Regístrese aquí</strong></legend>
 				
+				<legend>Datos personales</legend>
+				
+				<div class="row">
+				<div class="col-md-12">
+				
+				<div class="col-md-3">
+				<div class="form-group">
+					<label for="form-nombre" class="requerido"> Nombre: </label> 
+					<input type="text" class="form-control" name="nombre" placeholder="Nombre" required><br>
+				</div>
+				</div>
+				
+				<div class="col-md-3">
+				<div class="form-group">
 				<label for="form-apellido"> Apellido: </label> 
-				<input type="text" name="apellido" placeholder="Apellido"><br><br>
+				<input type="text" class="form-control" name="apellido" placeholder="Apellido"><br>
+				</div>
+				</div>
 				
+				<div class="col-md-9">
 				<label for="form-genero" class="requerido"> Género: </label>
 				<input type="radio" name="genero" value="masculino" required>Masculino
 				<input type="radio" name="genero" value="femenino" required>Femenino<br><br>
+				</div>
 				
+				<div class="col-md-9">
 				<label for="form-date" class="requerido"> Fecha de nacimiento: </label>
-				<input type="date" required><br>
-				<br><br>
+				<input type="date" required><br><br>
+				</div>
+				
+				
+				<div class="col-md-10">
 				<label for="form-tabla" class="requerido">Elija su país:</label>
 				<select id="tabla" name="tabla">
 					<option value="AF"             >Afghanistan</option>
@@ -278,20 +298,39 @@
 					<option value="EH"             >Western Sahara</option>
 					<option value="YE"             >Yemen</option>
 					<option value="ZM"             >Zambia</option>
-					<option value="ZW"             >Zimbabwe</option>
+					<option value="ZW"             >Zimbabwe</option><br>
 				</select>
-				<br><br>
+				</div>
+				<br><br><br><br><br><br><br><br><br><br><br><br>
+			
+			<legend>Datos de usuario</legend>
+			<br>
+			<div class="col-md-3">
+			<div class="form-group">
 			<label for="form-nombreusuario" class="requerido"> Nombre de usuario: </label> 
-			<input type="text" name="nombreusuario" placeholder="Nombre de usuario" required><br><br>
+			<input type="text" class="form-control" name="nombreusuario" placeholder="Nombre de usuario" required><br><br>
+			</div>
+			</div>
 			
+			<div class="col-md-3">
+			<div class="form-group">
 			<label for="form-email" class="requerido"> Correo electrónico: </label> 
-			<input type="email" name="email" placeholder="Correo electrónico"required><br><br>
+			<input type="email" class="form-control" name="email" placeholder="Correo electrónico"required><br><br>
+			</div>
+			</div>
 			
+			<div class="col-md-3">
+			<div class="form-group">
 			<label for="form-password" class="requerido"> Contraseña: </label> 
-			<input type="password" name="password" placeholder="Contraseña"required><br><br>
+			<input type="password" class="form-control" name="password" placeholder="Contraseña"required><br><br>
+			</div>
+			</div>
 			
+			<div class="col-md-10">
 			<button id="registrar">Registrar</button>
-		
+			</div>
+			</div>
+			</div>
 			</fieldset>
 		</form>
 	</div>

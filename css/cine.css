@@ -1,0 +1,46 @@
+.mapa-fluido {
+  position: relative;
+  /*Para mantener la relacion de aspecto al redimensionar la pagina hay que añadir un padding de 56.25%*/
+  padding-bottom: 18.75%; 
+  height: 0;
+}
+
+.mapa-fluido iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*Comentarios*/
+#comentarios li{
+    list-style-type: none;
+}
+
+
+#comentarios figure img {
+    width: 75px;
+    height: 75px;
+}
+
+#comentarios li blockquote {
+    background-color: rgba(105, 178, 105, 0.75);
+}
+
+#comentarios li blockquote {
+    border-left: 5px solid #273A6D;
+}
+
+#comentarios li blockquote small {
+    color: black;
+}
+
+#comentarios form button{
+    float: right;
+}
+
+#comentarios_lista {
+    border-bottom: 2px solid #273A6D;
+}

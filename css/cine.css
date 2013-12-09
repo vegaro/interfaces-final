@@ -36,3 +36,11 @@
 #comentarios li blockquote small {
     color: black;
 }
+
+#comentarios form button{
+    float: right;
+}
+
+#comentarios_lista {
+    border-bottom: 2px solid #273A6D;
+}

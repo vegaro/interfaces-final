@@ -35,7 +35,7 @@
         <div id="comentarios" class="row">
             <div class="col-md-12">
                 <h2>Comentarios</h2>
-                <ul>
+                <ul id="comentarios_lista">
                     <li class="row">
                         <figure class="col-md-1">
                             <img src="images/avatares/heisenberg.jpeg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
@@ -55,6 +55,17 @@
                         </blockquote>
                     </li>
                 </ul>
+                <form role="form" class="row col-md-8 col-md-offset-2">
+                  <div class="form-group">
+                    <label for="nombreForm">Nombre y apellidos</label>
+                    <input type="text" class="form-control" id="nombreForm" placeholder="Nombre y apellidos">
+                  </div>
+                  <div class="form-group">
+                    <label for="comentarioForm">Comentario</label>
+                    <textarea type="password" class="form-control" id="comentarioForm" placeholder="Comentario" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
         </div>
     </div>

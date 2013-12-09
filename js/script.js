@@ -1,26 +1,33 @@
-
-
 $( document ).ready( function() {
-  var container = document.querySelector('.packery');
-  var pckry = new Packery( container );
-  
-  eventie.bind( container, 'click', function() {
-    // don't proceed if item was not clicked on
-    var target = event.target;
-    if ( !classie.has( target, 'item' ) ) {
-      return;
+    if (localStorage.getItem('usuarioConectado')){
+        // El usuario esta logeado
+        $('#registro-login').toggle();
+        $('#registro-logout').toggle();
+        $('#usuario-conectado-nombre').text(
+            localStorage.getItem(localStorage.getItem('usuarioConectado')+'-nombre'));
     }
-    var isGigante = classie.has( target, 'gigante' );
-    classie.toggleClass( target, 'gigante' );
-    $(target).children().toggle();
-    if ( isGigante ) {
-      // if shrinking, just layout
-      pckry.layout();
-
-
-    } else {
-      // if expanding, fit it
-      pckry.fit( target );
-    }
-  });
 });
+
+$('#form-login').submit(function(e){
+    // Si el usuario existe en la base de datos
+    var usuario = $('#form-login [name="usuario"]').val();
+    var pass = $('#form-login [name="pass"]').val();
+    if (localStorage.getItem(usuario+'-pass') !== null){
+        if (localStorage.getItem(usuario+'-pass') === pass){
+            // Login
+            localStorage.setItem('usuarioConectado', usuario);
+            location.reload();
+        }
+    }else{
+        alert("Este usuario no existe.");
+    }
+    event.preventDefault();
+});
+
+$('#registro-logout a').click(function(e){
+    // Desconecta al usuario
+    localStorage.removeItem('usuarioConectado');
+    // Recarga la pagina
+    location.reload();
+});
+

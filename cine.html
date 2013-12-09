@@ -2,10 +2,12 @@
 <html>
   <head>
     <title>Bootstrap 101 Template</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/cine.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -14,20 +16,45 @@
                 <div class="row">
                     <div id="nombre_cine" class="col-md-6"> 
                         <h1 class="ribbon">
-                           <strong class="ribbon-content">Cinesa</strong>
+                           <strong class="ribbon-content">Cinesa Heron City</strong>
                         </h1>
                     </div>
                 </div>
             </header>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <h2>Mapa</h2>
+            <div class="mapa-fluido col-md-12">
+                <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zJue8iNcX6FU.keZXeNttloA8"></iframe>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <h2>Pelis</h2>
+            </div>
+        </div>
+        <div id="comentarios" class="row">
+            <div class="col-md-12">
+                <h2>Comentarios</h2>
+                <ul>
+                    <li class="row">
+                        <figure class="col-md-1">
+                            <img src="images/avatares/heisenberg.jpeg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                        </figure>
+                        <blockquote class="col-md-10">
+                            <p>La familia es todo</p>
+                            <small><cite title="Heisenberg">Heisenberg</cite></small>
+                        </blockquote>
+                    </li>
+                    <li class="row">
+                        <figure class="col-md-1">
+                            <img src="images/avatares/pinkman.jpg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                        </figure>
+                        <blockquote class="col-md-10">
+                            <p>¿Qué? ¡vamos hombre!, eres inteligente. Tu haces veneno de frijoles. Mira, tenemos, tenemos un laboratorio entero justo aquí, ¿cierto?. ¿Que tal si tomas esos químicos y haces algo de combustible de cohetes?, así puedes enviar una señal de luz. O puedes construir una especie de robot que nos ayude, o un aparato casero, o construir una nueva batería, o... Espera. No. ¿Que tal si quitamos cosas de de la rv y construimos algo totalmente diferente?, tu sabes, como una.. como un arenero. De esa forma nos vamos en el arenero o... ¿Qué?,¿hey?, ¿qué pasa?</p>
+                            <small><cite title="Heisenberg">Heisenberg</cite></small>
+                        </blockquote>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

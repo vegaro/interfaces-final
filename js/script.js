@@ -23,4 +23,17 @@ $( document ).ready( function() {
       pckry.fit( target );
     }
   });
+  eventie.bind( container, 'click', function() {
+    // don't proceed if item was not clicked on
+    var target = event.target;
+    if ( !classie.has( target, 'flecha-cerrar' ) ) {
+      return;
+    }
+    console.log( $(target).parent());
+    console.log( $(target));
+    $(target).parent().toggleClass('gigante');
+    $(target).siblings().toggle();
+    $(target).toggle();
+    pckry.layout();
+  });
 });

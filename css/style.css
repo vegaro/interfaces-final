@@ -155,7 +155,7 @@ html, body {
 }
 
 .item {
-  width: 19.2%;
+  width: 150px;
   height: 200px;
   float: left;
   background: #C09;
@@ -171,4 +171,18 @@ html, body {
 
 .item > *{
   display: none;
+}
+
+.packery-img{
+  height: 100%;
+  float: left;
+}
+.gigante{
+  background: #69b269 !important;
+}
+
+.flecha-cerrar{
+  float:bottom;
+  float:right;
+  margin: 3px;
 }

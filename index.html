@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>ImBb - Pagina de Inicio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="page-wrap">
+  <div class="page-wrap">
     <nav class="navbar navbar-default navbar-inverse" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -61,29 +61,74 @@
             <header class="col-md-12">
             </header>
         </div>
-        <div class="row">
+      <div class="row">
 <!--            Columna que contiene el modulo de busqueda -->
             
-            <div class="col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
+        <div class="col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
 <!--                Se introducen dos clases de columnas para dar soporte a dispositivos medianos y pequenos-->
-                <div class="form-group">
-                    <label for="busqueda"></label><br>
-                    <input type="text" class="form-control" id="busqueda">
-                    <button type="button" class="btn btn-default" style="display: block; margin-left:auto; margin-right:auto">Buscar</button>
-                </div>        
-            </div>
+          <div class="form-group">
+            <label for="busqueda"></label><br>
+            <input type="text" class="form-control" id="busqueda">
+            <button type="button" class="btn btn-default" style="display: block; margin-left:auto; margin-right:auto">Buscar</button>
+          </div>        
         </div>
-        <div class="row">
+      </div>
+      <div class="row">
         <div class="packery col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
-          <div class="item" style="background-image:url('images/1/caratula.jpg'); background-size:100% auto"><p>Hola</p></div>
-          <div class="item" style="background-image:url('images/2/caratula.jpg'); background-size:100% auto"><p>Hola</p></div>
-          <div class="item" style="background-image:url('images/3/caratula.jpg'); background-size:100% auto"><p>Hola</p></div>
-          <div class="item" style="background-image:url('images/4/caratula.jpg'); background-size:100% auto"><p>Hola</p></div>
-          <div class="item" style="background-image:url('images/5/caratula.jpg'); background-size:100% auto"><p>Hola</p></div>
+          <div class="item" style="background-image:url('images/1/caratula.jpg'); background-size:100% auto">
+            <a href="pelicula1.html"><img class="packery-img" src="images/1/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
+            <div class="col-md-9">
+              <div class"row">Titulo: <a href="pelicula1.html">El Lado Bueno de las Cosas</a> </div>
+              <div class"row">Cines:</div> 
+              <div class"row">Director: David O. Russell</div>
+              <div class"row">Género: Comedia</div>
+            </div>
+            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+          </div>
+          <div class="item" style="background-image:url('images/2/caratula.jpg'); background-size:100% auto">
+            <a href="pelicula2.html"><img class="packery-img" src="images/2/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
+            <div class="col-md-9">
+              <div class"row">Titulo: <a href="pelicula2.html">El Mayordomo</a> </div>
+              <div class"row">Cines:</div> 
+              <div class"row">Director: Lee Daniels</div>
+              <div class"row">Género: Drama</div>
+            </div>
+            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+          </div>
+          <div class="item" style="background-image:url('images/3/caratula.jpg'); background-size:100% auto">
+            <a href="pelicula3.html"><img class="packery-img" src="images/3/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
+            <div class="col-md-9">
+              <div class"row">Titulo: <a href="pelicula3.html">Una Cuestión de Tiempo</a> </div>
+              <div class"row">Cines:</div> 
+              <div class"row">Director: Richard Curtis</div>
+              <div class"row">Género: Romantica</div>
+            </div>
+            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+          </div>
+          <div class="item" style="background-image:url('images/4/caratula.jpg'); background-size:100% auto">
+            <a href="pelicula4.html"><img class="packery-img" src="images/4/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
+            <div class="col-md-9">
+              <div class"row">Titulo: <a href="pelicula4.html">Prisioneros</a> </div>
+              <div class"row">Cines:</div> 
+              <div class"row">Director: Denis Villeneuve</div>
+              <div class"row">Género: Drama</div>
+            </div>
+            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+          </div>
+          <div class="item" style="background-image:url('images/5/caratula.jpg'); background-size:100% auto">
+            <a href="pelicula5.html"><img class="packery-img" src="images/5/caratula.jpg" title="Brujas de Zugarramurdi" alt="Brujas Zugarramurdi"></img></a>
+            <div class="col-md-9">
+              <div class"row">Titulo: <a href="pelicula5.html">Las Brujas de Zugrramurdi</a> </div>
+              <div class"row">Cines:</div> 
+              <div class"row">Director: Alex de la Iglesia</div>
+              <div class"row">Género: Comedia</div>
+            </div>
+            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+          </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
   <footer class="site-footer">
     ImBb 2013
   </footer>

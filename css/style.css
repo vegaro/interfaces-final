@@ -173,3 +173,11 @@ html, body {
 .item > *{
   display: none;
 }
+
+.requerido{
+    font-weight: bold; 
+}
+.requerido:after{
+    content: "*";
+    color: red;
+}

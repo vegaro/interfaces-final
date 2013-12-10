@@ -12,6 +12,7 @@ $( document ).ready( function() {
 $('#comentarios form').submit(function(e) {
     var autor = $('#comentarios #nombreForm').val();
     var comentario = $('#comentarios #comentarioForm').val();
+    var puntuacion = $('#comentarios #puntuacionForm').val();
 
     // Generar el codigo html del nuevo elemento
     var html =  $('<li class="row"> \
@@ -20,6 +21,7 @@ $('#comentarios form').submit(function(e) {
                     </figure> \
                     <blockquote class="col-md-10"> \
                         <p>' + comentario + '</p> \
+                        <span class="pull-right">' + puntuacion + '/10</span> \
                         <small><cite title="' + autor + '">' + autor + '</cite></small> \
                     </blockquote> \
                 </li>').hide();

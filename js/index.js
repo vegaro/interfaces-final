@@ -34,4 +34,7 @@ $( document ).ready( function() {
     $(target).toggle();
     pckry.layout();
   });
+
+  // Modulo de busqueda
+  $('#busqueda').tipuesearch();
 });

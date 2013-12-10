@@ -246,3 +246,7 @@ html, body {
 #avanzada{
   display: none;
 }
+
+.margin-top {
+  margin-top: 20px;
+}

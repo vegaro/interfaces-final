@@ -226,19 +226,6 @@ html, body {
 #pelicula5 header{
       background-image: url('../images/cines/pelicula5.jpg');
 }
-
 #avanzada{
-background:transparent;
-width:auto;
-height:20px;
-transition:height 2s;
--webkit-transition:height 2s;
-overflow: hidden;
-border-radius:5px;
-border:1px solid #a1a1a1;
-text-align:justify;
-float:center;
-}
-#avanzada:hover{
-height:auto;
+  display: none;
 }

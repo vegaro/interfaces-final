@@ -30,3 +30,7 @@ $('#registro-logout a').click(function(e){
     // Recarga la pagina
     location.reload();
 });
+
+function toggleAvanzada(){
+    $('#avanzada').toggle();
+}

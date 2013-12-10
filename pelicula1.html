@@ -5,18 +5,12 @@
  
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-	 <link href="css/style.css" rel="stylesheet">
-     <link rel="stylesheet" href="css/responsiveslides.css">
-    <script language="javascript" src="js/responsiveslides.min.js"></script>
-     <script>
-        $(function () {
-        $("#slider3").responsiveSlides({
-            manualControls: '#slider3-pager',
-            maxwidth: 540
-          });
-        });
-     </script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/colorbox/colorbox.css">
+    <link rel="stylesheet" href="css/peli.css">
+     
 <title>El lado bueno de las cosas</title>
 </head>
 
@@ -35,47 +29,57 @@
 				</header>
 			</div>
 			<div class="row">
-		<div class="col-md-12">
-			<div class="col-md-3">
-				<img src="images/1/caratula.jpg" alt = ""  style="max-width:100%; max-height:100%;"/><br>
-				<!--Trailer, bot�n en forma de play-->
-				<a href="http://www.youtube.com/watch?v=X61g-9ArR7o" target="_blank">Trailer: El lado bueno de las cosas</a>
-			</div>
-		<div class="col-md-9">
-				<div class="row">
-				<h2>Director</h2> 
-				<p>David O. Russell</p>
-				</div>
-				<div class="row">
-				<h2>Reparto</h2> 
-				<!--fotos de los protagonistas en c�rculos-->
-				<img src="images/1/protagonista1.jpg" alt = ""  class="img-circle"/>
-				<img src="images/1/protagonista2.jpg" alt = ""  class="img-circle"/>
-				<img src="images/1/protagonista3.jpg" alt = ""  class="img-circle"/>
-				<p> Robert De Niro, Bradley Cooper, Jennifer Lawrence, <br>
-				Jacki Weaver, Chris Tucker, Julia Stiles,
-				Anupam Kher, John Ortiz, Shea Whigham, Dash Mihok,
-				Paul Herman, Brea Bee </p>
-				</div>
-				<div class="row">
-				<h2>Sinopsis</h2>
-				<p> Tras pasar ocho meses en una instituci�n mental por agredir al amante de su mujer, Pat (Bradley Cooper)
-				vuelve con lo puesto a vivir en casa de sus padres (Robert De Niro y Jacki Weaver). Determinado a tener una
-				actitud positiva y recuperar a su ex-mujer, el mundo de Pat se pone del rev�s cuando conoce a Tiffany (Jennifer Lawrence),
-				una chica con ciertos problemas y no muy buena fama en el barrio. A pesar de su mutua desconfianza inicial, entre ellos pronto
-				se desarrollar� un v�nculo muy especial que les ayudar� a encontrar en sus vidas el lado bueno de las cosas.</p>
-				</div>
-				<div class="row">
-				<h2>Comentarios</h2>
-				<textarea rows="5" cols="50"></textarea>
-				</div>
-				<div class="row"> 
-				<h2>Califique la pel�cula (estrellitas)</h2>
-				</div>
-			</div>
-			</div>
-		</div>
-		<div class="row">
+        		<div class="col-md-12">
+        			<div class="col-md-3">
+                        <div class="row col-md-12">
+        				    <img src="images/1/caratula.jpg" alt="Caratula" style="max-width:100%; max-height:100%;"/><br>
+                        </div>
+                        <div class="row col-md-12">
+                            <button class="center-block btn btn-primary btn-lg youtube cboxElement" href="http://www.youtube.com/embed/X61g-9ArR7o?rel=0&amp;wmode=transparent">Trailer</button>
+                        </div>
+        			</div>
+		            <div class="col-md-9">
+				        <div class="row">
+				            <h2>Director</h2> 
+				            <p>David O. Russell</p>
+				        </div>
+				        <div class="row">
+				            <h2>Reparto</h2> 
+				            <!--fotos de los protagonistas en circulos-->
+
+                                <ul id="reparto" class="row col-md-12">
+                                    <li class="col-md-2">
+                                        <figure>
+                                            <img src="images/1/protagonista1.jpg" alt="Protagonista" title="Robert de Niro" class="img-circle"/>
+                                        </figure>
+                                        <figcaption>Robert De Niro</figcaption>
+                                    </li>
+                                    <li class="col-md-2">
+                                        <figure>
+                                            <img src="images/1/protagonista2.jpg" alt="Protagonista" title="Bradley Cooper" class="img-circle"/>
+                                        </figure>
+                                        <figcaption>Bradley Cooper</figcaption>
+                                    </li>
+                                    <li class="col-md-2">
+                                        <figure>
+                                            <img src="images/1/protagonista3.jpg" alt="Protagonista" title="Jennifer Lawrence" class="img-circle"/>
+                                        </figure>
+                                        <figcaption>Jennifer Lawrence</figcaption>
+                                    </li>
+                                </ul>
+            				<p class="row col-md-12"> Robert De Niro, Bradley Cooper, Jennifer Lawrence, Jacki Weaver, Chris Tucker, Julia Stiles, Anupam Kher, John Ortiz, Shea Whigham, Dash Mihok, Paul Herman, Brea Bee </p>
+				        </div>
+    				    <div class="row">
+    				        <h2>Sinopsis</h2>
+    				        <p> Tras pasar ocho meses en una institucion mental por agredir al amante de su mujer, Pat (Bradley Cooper) vuelve con lo puesto a vivir en casa de sus padres (Robert De Niro y Jacki Weaver). Determinado a tener una actitud positiva y recuperar a su ex-mujer, el mundo de Pat se pone del rev�s cuando conoce a Tiffany (Jennifer Lawrence), una chica con ciertos problemas y no muy buena fama en el barrio. A pesar de su mutua desconfianza inicial, entre ellos pronto se desarrollar� un vinculo muy especial que les ayudar� a encontrar en sus vidas el lado bueno de las cosas.</p>
+    				    </div>
+            			<div class="row"> 
+            				<h2>Califique la pel�cula (estrellitas)</h2>
+            			</div>
+			        </div>
+			    </div>
+		    </div>
+		    <div class="row">
 		<div class="col-md-12">
 		  <h2>Galer�a de fotos</h2>
             <ul class="rslides" id="slider3">
@@ -100,6 +104,8 @@
 			</ul>
            </div>
         </div>
+
+
         
 		<button type="button" class="btn btn-large btn-success">
 		<span class="glyphicon glyphicon-shopping-cart"></span>comprar
@@ -112,7 +118,16 @@
 		</div>
 	</div>
 
-	<script language="javascript" src="./script/script.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="js/packery.pkgd.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/peli.js"></script>
 	</body>
 
 </html>

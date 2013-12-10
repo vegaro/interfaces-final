@@ -38,3 +38,25 @@ $('select#fila').on('change',function(){
     }
 
 });
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+var dictPeli = {
+  "1" : "El Lado Bueno de las Cosas",
+  "2" : "El Mayordomo",
+  "3" : "Cuestion de Tiempo",
+  "4" : "Prisioneros",
+  "5" : "Las Brujas de Zugarramurdi"
+};
+
+
+var peli = getUrlVars()["peli"];
+$('#peli').val(peli);
+
+$('#pelicula').text(dictPeli[peli]);

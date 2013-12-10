@@ -98,7 +98,12 @@
                                         <option value="22">2022</option>
                                         <option value="23">2023</option>
                                     </select>
-                            </div>                        
+                            </div>
+                            <input class="form-control" type="hidden" id="peli" name="peli" required>
+                            <input class="form-control" type="hidden" id="sesion" name="sesion" required>
+                            <input class="form-control" type="hidden" id="fecha" name="fecha" required>
+                            <input class="form-control" type="hidden" id="noentradas" name="noentradas" required>
+                            <input class="form-control" type="hidden" id="cine" name="cine" required>                      
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -112,12 +117,20 @@
                         <p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
                     </div>                   
                 </div>
-                <div id="factura" class="col-md-3">
+                <div id="factura" class="col-md-4">
                     <div class="col-md-12 row">
                         <p>Precio unitario</p>
                         <p class="precios"><span id="precio">8.90</span>* €</p>
                         <p>Precio total (impuestos incluidos)</p>
                         <p class="precios"><span id="precio-total">0.00</span> €</p>
+                        <p>Pelicula seleccionada</p>
+                        <p class="precios"><span id="pelicula"></span></p>
+                        <p>Cine</p>
+                        <p class="precios"><span id="cine-campo"></span></p>
+                        <p>Sesion</p>
+                        <p class="precios"><span id="sesion-campo"></span></p>
+                        <p>Fecha</p>
+                        <p class="precios"><span id="fecha-campo"></span></p>
                     </div>
                 </div>
             </form>

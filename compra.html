@@ -30,10 +30,10 @@
                             <label for="cine" class="requerido">Elige el cine</label>
                                 <select class="form-control" id="cine" name="cine" required>
                                     <option value="" disabled selected>Elige</option>
-                                    <option value="heron">Cinesa Heron City</option>
-                                    <option value="cinesa-proy">Cinesa Proyecciones</option>
-                                    <option value="principepio">Cines Principe Pio</option>
-                                    <option value="roxya">Cine Roxy A</option>
+                                    <option value="1">Cinesa Heron City</option>
+                                    <option value="2">Cinesa Proyecciones</option>
+                                    <option value="3">Cines Principe Pio</option>
+                                    <option value="4">Cine Roxy A</option>
                                 </select>
                         </div>
                         <div class="row">
@@ -94,6 +94,7 @@
                                     <option value="7">7</option>
                                 </select>
                             </div>
+                            <input class="form-control" type="hidden" id="peli" name="peli" required>
                         </div>
                     </div>     
                     <div id="factura" class="col-md-4 col-md-offset-1">
@@ -102,6 +103,8 @@
                             <p class="precios"><span id="precio">8.90</span>* €</p>
                             <p>Precio total (impuestos incluidos)</p>
                             <p class="precios"><span id="precio-total">0.00</span> €</p>
+                            <p>Pelicula seleccionada</p>
+                            <p class="precios"><span id="pelicula"></span></p>
                         </div>
                     </div>
                 </div>

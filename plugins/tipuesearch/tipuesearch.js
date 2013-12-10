@@ -333,25 +333,25 @@ http://www.tipue.com/search
                          }
                          else
                          {
-                              out += '<div id="tipue_search_warning_head">Nothing found</div>'; 
+                              out += '<div id="tipue_search_warning_head">No se encontro nada</div>'; 
                          }
                     }
                     else
                     {
                          if (show_stop)
                          {
-                              out += '<div id="tipue_search_warning_head">Nothing found</div><div id="tipue_search_warning">Common words are largely ignored</div>';     
+                              out += '<div id="tipue_search_warning_head">No se encontro nada</div><div id="tipue_search_warning">Common words are largely ignored</div>';     
                          }
                          else
                          {
-                              out += '<div id="tipue_search_warning_head">Search too short</div>';
+                              out += '<div id="tipue_search_warning_head">Busqueda demasiado corta</div>';
                               if (set.minimumLength == 1)
                               {
-                                   out += '<div id="tipue_search_warning">Should be one character or more</div>';
+                                   out += '<div id="tipue_search_warning">Deberia ser un caracter o mas</div>';
                               }
                               else
                               {
-                                   out += '<div id="tipue_search_warning">Should be ' + set.minimumLength + ' characters or more</div>';
+                                   out += '<div id="tipue_search_warning">Deberia ser ' + set.minimumLength + ' caracteres o mas</div>';
                               }
                          }
                     }

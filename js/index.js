@@ -1,3 +1,15 @@
+function avanzada (argument) {
+  var genero = $("input:radio[name=form-genero]:checked").val();
+  if (genero === undefined){
+    genero = '';
+  }
+  var director = $("#form-director").val();
+  var actor = $("#form-actor").val();
+  $("#input-avanzada").val(genero + ' ' + director + ' ' + actor);
+  $("#input-avanzada").tipuesearch();
+  $("#avanzada form").submit();
+}
+
 $( document ).ready( function() {
   var container = document.querySelector('.packery');
   var pckry = new Packery( container );

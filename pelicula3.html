@@ -43,8 +43,7 @@
                 </ul>
                 <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
                     <div class="form-group">
-                        <input type="text" id="tipue_search_input"
-                            <option value="1">1</option> class="form-control" placeholder="Buscar..."  name="q">
+                        <input type="text" id="tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
                     </div>
                     <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
                 </form>
@@ -66,7 +65,7 @@
                     </li>
                 </ul>
                 <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
-                <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                <li class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></li> 
                     <li><a href="#">Salir</a></li>
                     <li class="divider-vertical"></li>
                 </ul>
@@ -92,7 +91,7 @@
                                 <img src="images/3/caratula.jpg" alt="Caratula" style="max-width:100%; max-height:100%;"/><br>
                             </div>
                             <div class="row col-md-12">
-                                <button class="center-block btn btn-primary btn-lg youtube cboxElement" href="http://www.youtube.com/embed/5DQAZtFHLEA?rel=0&amp;wmode=transparent">Trailer</button>
+                                <a class="center-block btn btn-primary btn-lg youtube cboxElement" href="http://www.youtube.com/embed/5DQAZtFHLEA?rel=0&amp;wmode=transparent">Trailer</a>
                             </div>
                         </div>
                         <div class="col-md-9">
@@ -212,7 +211,6 @@
                         <label for="puntuacionForm" class="control-label">Puntuacion:</label>
                         <select id="puntuacionForm" name="puntuacionForm" required>
                             <option value="">Nota</option>
-                            <option value="1">1</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>

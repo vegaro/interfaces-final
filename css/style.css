@@ -18,6 +18,7 @@ header {
     -moz-box-shadow: 2px 10px 19px rgba(50, 50, 50, 0.75);
     box-shadow: 2px 10px 19px rgba(50, 50, 50, 0.75);
     background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 40px;
 }
 
 .ribbon {
@@ -178,6 +179,7 @@ html, body {
   height: 100%;
   float: left;
 }
+
 .gigante{
   background: rgba(105, 178, 105, 0.75) !important;
 }
@@ -186,4 +188,12 @@ html, body {
   float:bottom;
   float:right;
   margin: 3px;
+
+.requerido{
+    font-weight: bold; 
+}
+
+.requerido:after{
+    content: "*";
+    color: red;
 }

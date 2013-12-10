@@ -38,8 +38,7 @@
                     </ul>
                     <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
                         <div class="form-group">
-                            <input type="text" id="tipue_search_input"
-                            <option value="1">1</option> class="form-control" placeholder="Buscar..."  name="q">
+                            <input type="text" id="tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
                         </div>
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
                     </form>
@@ -61,7 +60,7 @@
                         </li>
                     </ul>
                     <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
-                    <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                    <li class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></li> 
                         <li><a href="#">Salir</a></li>
                         <li class="divider-vertical"></li>
                     </ul>
@@ -151,7 +150,7 @@
                                         <option value="7">7</option>
                                     </select>
                                 </div>
-                                <input class="form-control" type="hidden" id="peli" name="peli" required>
+                                <input class="form-control" type="hidden" id="peli" name="peli">
                             </div>
                         </div>     
                         <div id="factura" class="col-md-4 col-md-offset-1">
@@ -167,7 +166,7 @@
                     </div>
                     <div class="col-md-12">
                         <span id="condiciones">
-                            <p>*Al realizar la compra online no se puede obtener ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial)</p>
+                            *Al realizar la compra online no se puede obtener ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial)<br>
                         </span>
                         <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
                         <p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>

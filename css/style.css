@@ -8,7 +8,7 @@ html {
 
 header {
     height: 150px;
-    background-image: url('../images/cines/cinesa.jpg');
+    background-image: url('../images/cines/sala.jpg');
     background-position: top left;
     background-size: cover;
 }
@@ -188,12 +188,41 @@ html, body {
   float:bottom;
   float:right;
   margin: 3px;
+}
 
-.requerido{
-    font-weight: bold; 
+#cinesa header{
+  background-image: url('../images/cines/cinesa.jpg');
 }
 
 .requerido:after{
-    content: "*";
-    color: red;
+  content: "*";
+  color: red;
+}
+
+#roxy header{
+      background-image: url('../images/cines/roxy.jpg');
+}
+
+#entrada header{
+      background-image: url('../images/cines/entrada.jpg');
+}
+
+#pelicula1 header{
+      background-image: url('../images/cines/pelicula1.jpg');
+}
+
+#pelicula2 header{
+      background-image: url('../images/cines/pelicula2.jpg');
+}
+
+#pelicula3 header{
+      background-image: url('../images/cines/pelicula3.jpg');
+}
+
+#pelicula4 header{
+      background-image: url('../images/cines/pelicula4.jpg');
+}
+
+#pelicula5 header{
+      background-image: url('../images/cines/pelicula5.jpg');
 }

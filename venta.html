@@ -23,18 +23,93 @@
         <div class="row">
             <form name="venta" action="compra_completa.html" method="get">
                 <div class="row col-md-8">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" class="form-control"required></input>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="nombre" class="requerido">Nombre:</label>
+                                <input type="text" id="nombre" class="form-control"required></input>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="apellidos" class="requerido">Apellidos:</label>
+                                <input type="text" id="apellidos" class="form-control"required></input>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email" class="requerido">Email:</label>
+                                <input type="email" id="email" class="form-control"required></input>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="telefono" class="requerido">Telefono:</label>
+                                <input type="telefono" id="telefono" class="form-control" placeholder="+34-xxxxxxxxx" required></input>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label for="apellidos">Apellidos:</label>
-                            <input type="text" id="apellidos" class="form-control"required></input>
+                    <div class=" row col-md-12"><h2 style="text-align:center">Datos de pago</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="tarjeta" class="requerido">Numero de Tarjeta</label>
+                                <input type="text"id="tarjeta" class="form-control" required placeholder="xxxxxxxxxxxxxxxx" maxlength="16"></input>
+                            </div>
+                            <div class="form-group">
+                                <label class="requerido" for="cvv">Codigo de Seguridad (cvv)</label>
+                                <input type="text" id="cvv" class="form-control" required placeholder="3 digitos detras de tarjeta" maxlength="3"></input>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group col-md-6">
+                                <label for="mes" class="requerido">Mes Caducidad</label>
+                                    <select class="form-control" id="mes" name="mes" required>
+                                        <option value="" disabled selected>- seleccione -</option>
+                                        <option value="1">Ene</option>
+                                        <option value="2">Feb</option>
+                                        <option value="3">Mar</option>
+                                        <option value="4">Abr</option>
+                                        <option value="5">May</option>
+                                        <option value="6">Jun</option>
+                                        <option value="7">Jul</option>
+                                        <option value="8">Ago</option>
+                                        <option value="9">Sep</option>
+                                        <option value="10">Oct</option>
+                                        <option value="11">Nov</option>
+                                        <option value="12">Dic</option>
+                                    </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="ano" class="requerido">Año Caducidad</label>
+                                    <select class="form-control" id="ano" name="ano" required>
+                                        <option value="" disabled selected>- seleccione -</option>
+                                        <option value="13">2013</option>
+                                        <option value="14">2014</option>
+                                        <option value="15">2015</option>
+                                        <option value="16">2016</option>
+                                        <option value="17">2017</option>
+                                        <option value="18">2018</option>
+                                        <option value="19">2019</option>
+                                        <option value="20">2020</option>
+                                        <option value="21">2021</option>
+                                        <option value="22">2022</option>
+                                        <option value="23">2023</option>
+                                    </select>
+                            </div>                        
                         </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                          <label class="requerido">
+                            <input type="checkbox" value="" required>
+                            Acepto las condiciones generales
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
+                        <p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
+                    </div>                   
                 </div>
             </form>
         </div>

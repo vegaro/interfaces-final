@@ -28,25 +28,25 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="nombre" class="requerido">Nombre:</label>
-                                <input type="text" id="nombre" class="form-control"required></input>
+                                <input type="text" name="nombre" id="nombre" class="form-control"required></input>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="form-group">
                                 <label for="apellidos" class="requerido">Apellidos:</label>
-                                <input type="text" id="apellidos" class="form-control"required></input>
+                                <input type="text" id="apellidos" name="apellidos"class="form-control"required></input>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="email" class="requerido">Email:</label>
-                                <input type="email" id="email" class="form-control"required></input>
+                                <input type="email" name="email" id="email" class="form-control"required></input>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="telefono" class="requerido">Telefono:</label>
-                                <input type="telefono" id="telefono" class="form-control" placeholder="+34-xxxxxxxxx" required></input>
+                                <input type="telefono" name="telefono" id="telefono" class="form-control" placeholder="+34-xxxxxxxxx" required></input>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="tarjeta" class="requerido">Numero de Tarjeta</label>
-                                <input type="text"id="tarjeta" class="form-control" required placeholder="xxxxxxxxxxxxxxxx" maxlength="16"></input>
+                                <input type="text" id="tarjeta" class="form-control" required placeholder="xxxxxxxxxxxxxxxx" maxlength="16"></input>
                             </div>
                             <div class="form-group">
                                 <label class="requerido" for="cvv">Codigo de Seguridad (cvv)</label>
@@ -66,7 +66,7 @@
                         <div class="col-md-6">
                             <div class="form-group col-md-6">
                                 <label for="mes" class="requerido">Mes Caducidad</label>
-                                    <select class="form-control" id="mes" name="mes" required>
+                                    <select class="form-control" id="mes" required>
                                         <option value="" disabled selected>- seleccione -</option>
                                         <option value="1">Ene</option>
                                         <option value="2">Feb</option>
@@ -84,7 +84,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="ano" class="requerido">Año Caducidad</label>
-                                    <select class="form-control" id="ano" name="ano" required>
+                                    <select class="form-control" id="ano" required>
                                         <option value="" disabled selected>- seleccione -</option>
                                         <option value="13">2013</option>
                                         <option value="14">2014</option>

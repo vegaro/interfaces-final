@@ -40,7 +40,7 @@
                     </ul>
                     <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
                         <div class="form-group">
-                            <input type="text" "tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
+                            <input type="text" id="tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
                         </div>
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
                     </form>
@@ -50,7 +50,7 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
                             <div class="dropdown-menu" style="padding: 15px;">
-                                <form id="form-login" action="">
+                                <form id="form-login" >
                                   <input id="usuario" style="margin-bottom: 15px;" type="text" name="usuario" size="30" placeholder="Usuario" />
                                   <input id="pass" style="margin-bottom: 15px;" type="password" name="pass" size="30" placeholder="Contraseña" />
                                   <input id="recordarme" style="float: left; margin-right: 10px;" type="checkbox" name="recordarme" value="1" />
@@ -62,7 +62,7 @@
                         </li>
                     </ul>
                     <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
-                    <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                    <li class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></li> 
                         <li><a href="#">Salir</a></li>
                         <li class="divider-vertical"></li>
                     </ul>
@@ -93,47 +93,47 @@
                     <div class="row">
                         <div class="packery col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
                             <div class="item" style="background-image:url('images/1/caratula.jpg'); background-size:100% auto">
-                                <a href="pelicula1.html"><img class="packery-img" src="images/1/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
+                                <a href="pelicula1.html"><img class="packery-img" src="images/1/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></a>
                                 <div class="col-md-9">
-                                    <div class"row">Titulo: <a href="pelicula1.html">El Lado Bueno de las Cosas</a> </div>
-                                    <div class"row">Director: David O. Russell</div>
-                                    <div class"row">Género: Comedia</div>
+                                    <div class="row">Titulo: <a href="pelicula1.html">El Lado Bueno de las Cosas</a> </div>
+                                    <div class="row">Director: David O. Russell</div>
+                                    <div class="row">Género: Comedia</div>
                                 </div>
                                 <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
                             </div>
                             <div class="item" style="background-image:url('images/2/caratula.jpg'); background-size:100% auto">
-                                <a href="pelicula2.html"><img class="packery-img" src="images/2/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
+                                <a href="pelicula2.html"><img class="packery-img" src="images/2/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></a>
                                 <div class="col-md-9">
-                                    <div class"row">Titulo: <a href="pelicula2.html">El Mayordomo</a> </div> 
-                                    <div class"row">Director: Lee Daniels</div>
-                                    <div class"row">Género: Drama</div>
+                                    <div class="row">Titulo: <a href="pelicula2.html">El Mayordomo</a> </div> 
+                                    <div class="row">Director: Lee Daniels</div>
+                                    <div class="row">Género: Drama</div>
                                 </div>
                                 <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
                             </div>
                             <div class="item" style="background-image:url('images/3/caratula.jpg'); background-size:100% auto">
-                                <a href="pelicula3.html"><img class="packery-img" src="images/3/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
+                                <a href="pelicula3.html"><img class="packery-img" src="images/3/caratula.jpg" title="Prisioneros" alt="Prisioneros"></a>
                                 <div class="col-md-9">
-                                    <div class"row">Titulo: <a href="pelicula3.html">Una Cuestión de Tiempo</a> </div>
-                                    <div class"row">Director: Richard Curtis</div>
-                                    <div class"row">Género: Romantica</div>
+                                    <div class="row">Titulo: <a href="pelicula3.html">Una Cuestión de Tiempo</a> </div>
+                                    <div class="row">Director: Richard Curtis</div>
+                                    <div class="row">Género: Romantica</div>
                                 </div>
                                 <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
                             </div>
                             <div class="item" style="background-image:url('images/4/caratula.jpg'); background-size:100% auto">
-                                <a href="pelicula4.html"><img class="packery-img" src="images/4/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
+                                <a href="pelicula4.html"><img class="packery-img" src="images/4/caratula.jpg" title="Prisioneros" alt="Prisioneros"></a>
                                 <div class="col-md-9">
-                                    <div class"row">Titulo: <a href="pelicula4.html">Prisioneros</a> </div>
-                                    <div class"row">Director: Denis Villeneuve</div>
-                                    <div class"row">Género: Drama</div>
+                                    <div class="row">Titulo: <a href="pelicula4.html">Prisioneros</a> </div>
+                                    <div class="row">Director: Denis Villeneuve</div>
+                                    <div class="row">Género: Drama</div>
                                 </div>
                                 <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
                             </div>
                             <div class="item" style="background-image:url('images/5/caratula.jpg'); background-size:100% auto">
-                                <a href="pelicula5.html"><img class="packery-img" src="images/5/caratula.jpg" title="Brujas de Zugarramurdi" alt="Brujas Zugarramurdi"></img></a>
+                                <a href="pelicula5.html"><img class="packery-img" src="images/5/caratula.jpg" title="Brujas de Zugarramurdi" alt="Brujas Zugarramurdi"></a>
                                 <div class="col-md-9">
-                                    <div class"row">Titulo: <a href="pelicula5.html">Las Brujas de Zugrramurdi</a> </div>
-                                    <div class"row">Director: Alex de la Iglesia</div>
-                                    <div class"row">Género: Comedia</div>
+                                    <div class="row">Titulo: <a href="pelicula5.html">Las Brujas de Zugrramurdi</a> </div>
+                                    <div class="row">Director: Alex de la Iglesia</div>
+                                    <div class="row">Género: Comedia</div>
                                 </div>
                                 <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
                             </div>
@@ -168,7 +168,7 @@
                             </blockquote>
                         </li>
                     </ul>
-                    <form role="form" class="row col-md-8 col-md-offset-2" action="">
+                    <form role="form" class="row col-md-8 col-md-offset-2" >
                       <p class="help-block pull-right" style="color:red;">Todos los campos son obligatorios</p>
 
                       <div class="form-group">
@@ -182,6 +182,7 @@
                       <div class="form-group">
                         <label for="puntuacionForm" class="control-label">Puntuacion:</label>
                         <select id="puntuacionForm" name="puntuacionForm" required>
+                            <option value="">Nota</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>

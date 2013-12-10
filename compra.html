@@ -38,7 +38,8 @@
                     </ul>
                     <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
                         <div class="form-group">
-                            <input type="text" "tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
+                            <input type="text" id="tipue_search_input"
+                            <option value="1">1</option> class="form-control" placeholder="Buscar..."  name="q">
                         </div>
                         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
                     </form>
@@ -48,7 +49,7 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
                             <div class="dropdown-menu" style="padding: 15px;">
-                                <form id="form-login" action="">
+                                <form id="form-login" >
                                   <input id="usuario" style="margin-bottom: 15px;" type="text" name="usuario" size="30" placeholder="Usuario" />
                                   <input id="pass" style="margin-bottom: 15px;" type="password" name="pass" size="30" placeholder="Contraseña" />
                                   <input id="recordarme" style="float: left; margin-right: 10px;" type="checkbox" name="recordarme" value="1" />

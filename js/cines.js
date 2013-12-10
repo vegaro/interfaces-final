@@ -1,4 +1,5 @@
 $( document ).ready( function() {
+  $('#tipue_search_input').tipuesearch();
   var container = document.querySelector('.packery');
   var pckry = new Packery( container );
   

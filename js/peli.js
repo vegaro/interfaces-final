@@ -7,4 +7,6 @@ $(function () {
 
 $(document).ready(function(){
     $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+    // Modulo de busqueda
+    $('#tipue_search_input').tipuesearch();
 });

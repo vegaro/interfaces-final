@@ -8,134 +8,193 @@
  <link href="css/compra.css" rel="stylesheet">
 </head>
 <body id="entrada">
+    <div class="page-wrap">
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">ImBb</a>
+                </div>
 
-    <div class="container">
-		<div class="row">
-            <header class="col-md-12">
-                <div class="row">
-                    <div id="nombre_cine" class="col-md-6"> 
-                        <h1 class="ribbon">
-                           <strong class="ribbon-content">Venta de entradas</strong>
-                        </h1>
-                    </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cines <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cine.html">Cinesa Heron City</a></li>
+                                <li><a href="cine_roxy_a.html">Roxy A</a></li>
+                                <li><a href="cines_principe_pio.html">Cines Principe Pio</a></li>
+                                <li><a href="cinesa_proyecciones.html">Cinesa Proyecciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
+                        <div class="form-group">
+                            <input type="text" "tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
+                    </form>
+                    <ul id="registro-login" class="nav navbar-nav">
+                        <li><a href="registro.html">Registro</a></li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
+                            <div class="dropdown-menu" style="padding: 15px;">
+                                <form id="form-login" action="">
+                                  <input id="usuario" style="margin-bottom: 15px;" type="text" name="usuario" size="30" placeholder="Usuario" />
+                                  <input id="pass" style="margin-bottom: 15px;" type="password" name="pass" size="30" placeholder="Contraseña" />
+                                  <input id="recordarme" style="float: left; margin-right: 10px;" type="checkbox" name="recordarme" value="1" />
+                                  <label class="string optional" for="recordarme"> Recordarme</label>
+                                 
+                                  <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Entrar" />
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
+                    <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                        <li><a href="#">Salir</a></li>
+                        <li class="divider-vertical"></li>
+                    </ul>
                 </div>
-            </header>
-        </div>
-        <div class="row">
-            <form name="venta" action="compra_completa.html" method="get">
-                <div class="row col-md-8">
-                    <div class="row col-md-12">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="nombre" class="requerido">Nombre:</label>
-                                <input type="text" name="nombre" id="nombre" class="form-control"required></input>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="form-group">
-                                <label for="apellidos" class="requerido">Apellidos:</label>
-                                <input type="text" id="apellidos" name="apellidos"class="form-control"required></input>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email" class="requerido">Email:</label>
-                                <input type="email" name="email" id="email" class="form-control"required></input>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="telefono" class="requerido">Telefono:</label>
-                                <input type="telefono" name="telefono" id="telefono" class="form-control" placeholder="+34-xxxxxxxxx" required></input>
-                            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <header class="col-md-12">
+                    <div class="row">
+                        <div id="nombre_cine" class="col-md-6"> 
+                            <h1 class="ribbon">
+                               <strong class="ribbon-content">Venta de entradas</strong>
+                            </h1>
                         </div>
                     </div>
-                    <div class=" row col-md-12"><h2 style="text-align:center">Datos de pago</h2>
-                    </div>
-                    <div class="row col-md-12">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="tarjeta" class="requerido">Numero de Tarjeta</label>
-                                <input type="text" id="tarjeta" class="form-control" required placeholder="xxxxxxxxxxxxxxxx" maxlength="16"></input>
+                </header>
+            </div>
+            <div class="row">
+                <form name="venta" action="compra_completa.html" method="get">
+                    <div class="row col-md-8">
+                        <div class="row col-md-12">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="nombre" class="requerido">Nombre:</label>
+                                    <input type="text" name="nombre" id="nombre" class="form-control"required></input>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="requerido" for="cvv">Codigo de Seguridad (cvv)</label>
-                                <input type="text" id="cvv" class="form-control" required placeholder="3 digitos detras de tarjeta" maxlength="3"></input>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="apellidos" class="requerido">Apellidos:</label>
+                                    <input type="text" id="apellidos" name="apellidos"class="form-control"required></input>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="requerido">Email:</label>
+                                    <input type="email" name="email" id="email" class="form-control"required></input>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="telefono" class="requerido">Telefono:</label>
+                                    <input type="telefono" name="telefono" id="telefono" class="form-control" placeholder="+34-xxxxxxxxx" required></input>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group col-md-6">
-                                <label for="mes" class="requerido">Mes Caducidad</label>
-                                    <select class="form-control" id="mes" required>
-                                        <option value="" disabled selected>- seleccione -</option>
-                                        <option value="1">Ene</option>
-                                        <option value="2">Feb</option>
-                                        <option value="3">Mar</option>
-                                        <option value="4">Abr</option>
-                                        <option value="5">May</option>
-                                        <option value="6">Jun</option>
-                                        <option value="7">Jul</option>
-                                        <option value="8">Ago</option>
-                                        <option value="9">Sep</option>
-                                        <option value="10">Oct</option>
-                                        <option value="11">Nov</option>
-                                        <option value="12">Dic</option>
-                                    </select>
+                        <div class=" row col-md-12"><h2 style="text-align:center">Datos de pago</h2>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="tarjeta" class="requerido">Numero de Tarjeta</label>
+                                    <input type="text" id="tarjeta" class="form-control" required placeholder="xxxxxxxxxxxxxxxx" maxlength="16"></input>
+                                </div>
+                                <div class="form-group">
+                                    <label class="requerido" for="cvv">Codigo de Seguridad (cvv)</label>
+                                    <input type="text" id="cvv" class="form-control" required placeholder="3 digitos detras de tarjeta" maxlength="3"></input>
+                                </div>
                             </div>
-                            <div class="form-group col-md-6">
-                                <label for="ano" class="requerido">Año Caducidad</label>
-                                    <select class="form-control" id="ano" required>
-                                        <option value="" disabled selected>- seleccione -</option>
-                                        <option value="13">2013</option>
-                                        <option value="14">2014</option>
-                                        <option value="15">2015</option>
-                                        <option value="16">2016</option>
-                                        <option value="17">2017</option>
-                                        <option value="18">2018</option>
-                                        <option value="19">2019</option>
-                                        <option value="20">2020</option>
-                                        <option value="21">2021</option>
-                                        <option value="22">2022</option>
-                                        <option value="23">2023</option>
-                                    </select>
+                            <div class="col-md-6">
+                                <div class="form-group col-md-6">
+                                    <label for="mes" class="requerido">Mes Caducidad</label>
+                                        <select class="form-control" id="mes" required>
+                                            <option value="" disabled selected>- seleccione -</option>
+                                            <option value="1">Ene</option>
+                                            <option value="2">Feb</option>
+                                            <option value="3">Mar</option>
+                                            <option value="4">Abr</option>
+                                            <option value="5">May</option>
+                                            <option value="6">Jun</option>
+                                            <option value="7">Jul</option>
+                                            <option value="8">Ago</option>
+                                            <option value="9">Sep</option>
+                                            <option value="10">Oct</option>
+                                            <option value="11">Nov</option>
+                                            <option value="12">Dic</option>
+                                        </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="ano" class="requerido">Año Caducidad</label>
+                                        <select class="form-control" id="ano" required>
+                                            <option value="" disabled selected>- seleccione -</option>
+                                            <option value="13">2013</option>
+                                            <option value="14">2014</option>
+                                            <option value="15">2015</option>
+                                            <option value="16">2016</option>
+                                            <option value="17">2017</option>
+                                            <option value="18">2018</option>
+                                            <option value="19">2019</option>
+                                            <option value="20">2020</option>
+                                            <option value="21">2021</option>
+                                            <option value="22">2022</option>
+                                            <option value="23">2023</option>
+                                        </select>
+                                </div>
+                                <input class="form-control" type="hidden" id="peli" name="peli" required>
+                                <input class="form-control" type="hidden" id="sesion" name="sesion" required>
+                                <input class="form-control" type="hidden" id="fecha" name="fecha" required>
+                                <input class="form-control" type="hidden" id="noentradas" name="noentradas" required>
+                                <input class="form-control" type="hidden" id="cine" name="cine" required>                      
                             </div>
-                            <input class="form-control" type="hidden" id="peli" name="peli" required>
-                            <input class="form-control" type="hidden" id="sesion" name="sesion" required>
-                            <input class="form-control" type="hidden" id="fecha" name="fecha" required>
-                            <input class="form-control" type="hidden" id="noentradas" name="noentradas" required>
-                            <input class="form-control" type="hidden" id="cine" name="cine" required>                      
+                        </div>
+                        <div class="col-md-12">
+                            <div class="checkbox">
+                              <label class="requerido">
+                                <input type="checkbox" value="" required>
+                                Acepto las condiciones generales
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
+                            <p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
+                        </div>                   
+                    </div>
+                    <div id="factura" class="col-md-4">
+                        <div class="col-md-12 row">
+                            <p>Precio unitario</p>
+                            <p class="precios"><span id="precio">8.90</span>* €</p>
+                            <p>Precio total (impuestos incluidos)</p>
+                            <p class="precios"><span id="precio-total">0.00</span> €</p>
+                            <p>Pelicula seleccionada</p>
+                            <p class="precios"><span id="pelicula"></span></p>
+                            <p>Cine</p>
+                            <p class="precios"><span id="cine-campo"></span></p>
+                            <p>Sesion</p>
+                            <p class="precios"><span id="sesion-campo"></span></p>
+                            <p>Fecha</p>
+                            <p class="precios"><span id="fecha-campo"></span></p>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="checkbox">
-                          <label class="requerido">
-                            <input type="checkbox" value="" required>
-                            Acepto las condiciones generales
-                          </label>
-                        </div>
-                        <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
-                        <p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
-                    </div>                   
-                </div>
-                <div id="factura" class="col-md-4">
-                    <div class="col-md-12 row">
-                        <p>Precio unitario</p>
-                        <p class="precios"><span id="precio">8.90</span>* €</p>
-                        <p>Precio total (impuestos incluidos)</p>
-                        <p class="precios"><span id="precio-total">0.00</span> €</p>
-                        <p>Pelicula seleccionada</p>
-                        <p class="precios"><span id="pelicula"></span></p>
-                        <p>Cine</p>
-                        <p class="precios"><span id="cine-campo"></span></p>
-                        <p>Sesion</p>
-                        <p class="precios"><span id="sesion-campo"></span></p>
-                        <p>Fecha</p>
-                        <p class="precios"><span id="fecha-campo"></span></p>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
+    <footer class="site-footer">
+        ImBb 2013
+    </footer>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/venta.js"></script>

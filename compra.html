@@ -10,116 +10,177 @@
 	<!-- En firefox no sale el calendario-->
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <header class="col-md-12">
-                <div class="row">
-                    <div id="nombre_cine" class="col-md-6"> 
-                        <h1 class="ribbon">
-                            <strong class="ribbon-content">Horario y venta de entradas</strong>
-                        </h1>
-                    </div>
+    <div class="page-wrap">
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">ImBb</a>
                 </div>
-            </header>
-        </div>
-        <div class="row">
-            <form name="input" method="get" action="venta.html">
-                <div class="row col-md-12">
-                    <div class="col-md-6">
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cines <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cine.html">Cinesa Heron City</a></li>
+                                <li><a href="cine_roxy_a.html">Roxy A</a></li>
+                                <li><a href="cines_principe_pio.html">Cines Principe Pio</a></li>
+                                <li><a href="cinesa_proyecciones.html">Cinesa Proyecciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
                         <div class="form-group">
-                            <label for="cine" class="requerido">Elige el cine</label>
-                                <select class="form-control" id="cine" name="cine" required>
-                                    <option value="" disabled selected>Elige</option>
-                                    <option value="1">Cinesa Heron City</option>
-                                    <option value="2">Cinesa Proyecciones</option>
-                                    <option value="3">Cines Principe Pio</option>
-                                    <option value="4">Cine Roxy A</option>
-                                </select>
+                            <input type="text" "tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fecha"  class="control-label requerido">Seleccione el día</label>
-                                    <input type="text" size="16" class="form-control datepicker" name="fecha" id="fecha" data-date-format="dd/mm/yyyy" data-date-weekstart="1" readonly required>
-                                </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
+                    </form>
+                    <ul id="registro-login" class="nav navbar-nav">
+                        <li><a href="registro.html">Registro</a></li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
+                            <div class="dropdown-menu" style="padding: 15px;">
+                                <form id="form-login" action="">
+                                  <input id="usuario" style="margin-bottom: 15px;" type="text" name="usuario" size="30" placeholder="Usuario" />
+                                  <input id="pass" style="margin-bottom: 15px;" type="password" name="pass" size="30" placeholder="Contraseña" />
+                                  <input id="recordarme" style="float: left; margin-right: 10px;" type="checkbox" name="recordarme" value="1" />
+                                  <label class="string optional" for="recordarme"> Recordarme</label>
+                                 
+                                  <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Entrar" />
+                                </form>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="sesion"  class="control-label requerido">Seleccione sesion</label>
-                                        <select class="form-control" id="sesion" name="sesion" required>
-                                            <option value="" disabled selected>Elige</option>
-                                            <option value="16:00">16:00</option>
-                                            <option value="18:00">18:00</option>
-                                            <option value="20:00">20:00</option>
-                                            <option value="23:00">23:00</option>
-                                        </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="noentradas"  class="control-label requerido">Seleccione el numero de entradas</label>
-                                <select class="form-control" id="noentradas" name="noentradas" required>
-                                    <option value="" disabled selected>Elige</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                <label for="fila"  class="control-label requerido">Fila</label>
-                                <select class="form-control" id="fila" name="fila" required>
-                                    <option value="" disabled selected>Elige</option>
-                                    <option value="1">A</option>
-                                    <option value="2">B</option>
-                                    <option value="3">C</option>
-                                    <option value="4">D</option>
-                                    <option value="5" disabled>E</option>
-                                    <option value="6">F</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 form-group" id="butacas">
-                                <label for="asiento"  class="control-label requerido">Butaca</label>
-                                <select class="form-control" id="asiento" name="asiento" required>
-                                    <option value="" disabled selected>Elige</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                </select>
-                            </div>
-                            <input class="form-control" type="hidden" id="peli" name="peli" required>
-                        </div>
-                    </div>     
-                    <div id="factura" class="col-md-4 col-md-offset-1">
-                        <div class="col-md-12 row">
-                            <p>Precio unitario</p>
-                            <p class="precios"><span id="precio">8.90</span>* €</p>
-                            <p>Precio total (impuestos incluidos)</p>
-                            <p class="precios"><span id="precio-total">0.00</span> €</p>
-                            <p>Pelicula seleccionada</p>
-                            <p class="precios"><span id="pelicula"></span></p>
+                        </li>
+                    </ul>
+                    <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
+                    <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                        <li><a href="#">Salir</a></li>
+                        <li class="divider-vertical"></li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <header class="col-md-12">
+                    <div class="row">
+                        <div id="nombre_cine" class="col-md-6"> 
+                            <h1 class="ribbon">
+                                <strong class="ribbon-content">Horario y venta de entradas</strong>
+                            </h1>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <span id="condiciones">
-                        <p>*Al realizar la compra online no se puede obtener ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial)</p>
-                    </span>
-                    <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
-					<p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
-                </div>   
-            </form>
-        </div>
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/compra.js"></script>
-    </body>
+                </header>
+            </div>
+            <div class="row">
+                <form name="input" method="get" action="venta.html">
+                    <div class="row col-md-12">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cine" class="requerido">Elige el cine</label>
+                                    <select class="form-control" id="cine" name="cine" required>
+                                        <option value="" disabled selected>Elige</option>
+                                        <option value="1">Cinesa Heron City</option>
+                                        <option value="2">Cinesa Proyecciones</option>
+                                        <option value="3">Cines Principe Pio</option>
+                                        <option value="4">Cine Roxy A</option>
+                                    </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="fecha"  class="control-label requerido">Seleccione el día</label>
+                                        <input type="text" size="16" class="form-control datepicker" name="fecha" id="fecha" data-date-format="dd/mm/yyyy" data-date-weekstart="1" readonly required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="sesion"  class="control-label requerido">Seleccione sesion</label>
+                                            <select class="form-control" id="sesion" name="sesion" required>
+                                                <option value="" disabled selected>Elige</option>
+                                                <option value="16:00">16:00</option>
+                                                <option value="18:00">18:00</option>
+                                                <option value="20:00">20:00</option>
+                                                <option value="23:00">23:00</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="noentradas"  class="control-label requerido">Seleccione el numero de entradas</label>
+                                    <select class="form-control" id="noentradas" name="noentradas" required>
+                                        <option value="" disabled selected>Elige</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <label for="fila"  class="control-label requerido">Fila</label>
+                                    <select class="form-control" id="fila" name="fila" required>
+                                        <option value="" disabled selected>Elige</option>
+                                        <option value="1">A</option>
+                                        <option value="2">B</option>
+                                        <option value="3">C</option>
+                                        <option value="4">D</option>
+                                        <option value="5" disabled>E</option>
+                                        <option value="6">F</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 form-group" id="butacas">
+                                    <label for="asiento"  class="control-label requerido">Butaca</label>
+                                    <select class="form-control" id="asiento" name="asiento" required>
+                                        <option value="" disabled selected>Elige</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </div>
+                                <input class="form-control" type="hidden" id="peli" name="peli" required>
+                            </div>
+                        </div>     
+                        <div id="factura" class="col-md-4 col-md-offset-1">
+                            <div class="col-md-12 row">
+                                <p>Precio unitario</p>
+                                <p class="precios"><span id="precio">8.90</span>* €</p>
+                                <p>Precio total (impuestos incluidos)</p>
+                                <p class="precios"><span id="precio-total">0.00</span> €</p>
+                                <p>Pelicula seleccionada</p>
+                                <p class="precios"><span id="pelicula"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <span id="condiciones">
+                            <p>*Al realizar la compra online no se puede obtener ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial)</p>
+                        </span>
+                        <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
+                        <p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
+                    </div>   
+                </form>
+            </div>
+            </div>
+    </div>
+    <footer class="site-footer">
+        ImBb 2013
+    </footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/compra.js"></script>
+</body>
 </html>

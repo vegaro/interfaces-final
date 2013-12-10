@@ -9,139 +9,200 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/cine.css" rel="stylesheet">
     <link href="css/comentarios.css" rel="stylesheet">
+    <link href="plugins/tipuesearch/tipuesearch.css" rel="stylesheet">
   </head>
   <body id="cinesa">
-    <div class="container">
-        <div class="row">
-            <header class="col-md-12">
-                <div class="row">
-                    <div id="nombre_cine" class="col-md-6"> 
-                        <h1 class="ribbon">
-                           <strong class="ribbon-content">Cinesa Proyecciones</strong>
-                        </h1>
-                    </div>
+    <div class="page-wrap">    
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">ImBb</a>
                 </div>
-            </header>
-        </div>
-		<!--Mapa-->
-        <div class="row">
-            <div class="mapa-fluido col-md-12">
-                <iframe src="https://mapsengine.google.com/map/embed?mid=zlHAlXcHtFBo.kECUXBROi4dU"></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-			<!--Cartelera-->
-                <h2>Pelis</h2>
-                <div class="row">
-                    <div class="packery col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
-                        <div class="item" style="background-image:url('images/1/caratula.jpg'); background-size:100% auto">
-                            <a href="pelicula1.html"><img class="packery-img" src="images/1/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
-                            <div class="col-md-9">
-                                <div class"row">Titulo: <a href="pelicula1.html">El Lado Bueno de las Cosas</a> </div> 
-                                <div class"row">Director: David O. Russell</div>
-                                <div class"row">Género: Comedia</div>
-                            </div>
-                            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
-                        </div>
-                        <div class="item" style="background-image:url('images/2/caratula.jpg'); background-size:100% auto">
-                            <a href="pelicula2.html"><img class="packery-img" src="images/2/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
-                            <div class="col-md-9">
-                                <div class"row">Titulo: <a href="pelicula2.html">El Mayordomo</a> </div>
-                                <div class"row">Director: Lee Daniels</div>
-                                <div class"row">Género: Drama</div>
-                            </div>
-                            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
-                        </div>
-                        <div class="item" style="background-image:url('images/3/caratula.jpg'); background-size:100% auto">
-                            <a href="pelicula3.html"><img class="packery-img" src="images/3/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
-                            <div class="col-md-9">
-                                <div class"row">Titulo: <a href="pelicula3.html">Una Cuestión de Tiempo</a> </div>
-                                <div class"row">Director: Richard Curtis</div>
-                                <div class"row">Género: Romantica</div>
-                            </div>
-                            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
-                        </div>
-                        <div class="item" style="background-image:url('images/4/caratula.jpg'); background-size:100% auto">
-                            <a href="pelicula4.html"><img class="packery-img" src="images/4/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
-                            <div class="col-md-9">
-                                <div class"row">Titulo: <a href="pelicula4.html">Prisioneros</a> </div>
-                                <div class"row">Director: Denis Villeneuve</div>
-                                <div class"row">Género: Drama</div>
-                            </div>
-                            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
-                        </div>
-                        <div class="item" style="background-image:url('images/5/caratula.jpg'); background-size:100% auto">
-                            <a href="pelicula5.html"><img class="packery-img" src="images/5/caratula.jpg" title="Brujas de Zugarramurdi" alt="Brujas Zugarramurdi"></img></a>
-                            <div class="col-md-9">
-                                <div class"row">Titulo: <a href="pelicula5.html">Las Brujas de Zugrramurdi</a> </div>
-                                <div class"row">Director: Alex de la Iglesia</div>
-                                <div class"row">Género: Comedia</div>
-                            </div>
-                            <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Comentarios -->
-        <div id="comentarios" class="row">
-            <div class="col-md-12">
-            <!--Comentarios-->
-                <h2>Comentarios</h2>
-                <ul id="comentarios_lista">
-                    <li class="row">
-                        <figure class="col-md-1">
-                            <img src="images/avatares/heisenberg.jpeg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
-                        </figure>
-                        <blockquote class="col-md-10">
-                            <p>La familia es todo</p>
-                            <span class="pull-right">5/10</span>
-                            <small><cite title="Heisenberg">Heisenberg</cite></small>
-                        </blockquote>
-                    </li>
-                    <li class="row">
-                        <figure class="col-md-1">
-                            <img src="images/avatares/pinkman.jpg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
-                        </figure>
-                        <blockquote class="col-md-10">
-                            <p>¿Qué? ¡vamos hombre!, eres inteligente. Tu haces veneno de frijoles. Mira, tenemos, tenemos un laboratorio entero justo aquí, ¿cierto?. ¿Que tal si tomas esos químicos y haces algo de combustible de cohetes?, así puedes enviar una señal de luz. O puedes construir una especie de robot que nos ayude, o un aparato casero, o construir una nueva batería, o... Espera. No. ¿Que tal si quitamos cosas de de la rv y construimos algo totalmente diferente?, tu sabes, como una.. como un arenero. De esa forma nos vamos en el arenero o... ¿Qué?,¿hey?, ¿qué pasa?</p>
-                            <span class="pull-right">8/10</span>
-                            <small><cite title="Pinkman">Pinkman</cite></small>
-                        </blockquote>
-                    </li>
-                </ul>
-                <form role="form" class="row col-md-8 col-md-offset-2" action="">
-                  <p class="help-block pull-right" style="color:red;">Todos los campos son obligatorios</p>
 
-                  <div class="form-group">
-                    <label for="nombreForm">Nombre y apellidos</label>
-                    <input type="text" class="form-control" id="nombreForm" placeholder="Nombre y apellidos" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="comentarioForm">Comentario</label>
-                    <textarea class="form-control" id="comentarioForm" placeholder="Comentario" rows="3" required></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="puntuacionForm" class="control-label">Puntuacion:</label>
-                    <select id="puntuacionForm" name="puntuacionForm" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cines <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cine.html">Cinesa Heron City</a></li>
+                                <li><a href="cine_roxy_a.html">Roxy A</a></li>
+                                <li><a href="cines_principe_pio.html">Cines Principe Pio</a></li>
+                                <li><a href="cinesa_proyecciones.html">Cinesa Proyecciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="form-inline navbar-form navbar-right" action="busqueda.html" role="search">     
+                        <div class="form-group">
+                            <input type="text" "tipue_search_input" class="form-control" placeholder="Buscar..."  name="q">
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="this.form.submit();"></span></button>
+                    </form>
+                    <ul id="registro-login" class="nav navbar-nav">
+                        <li><a href="registro.html">Registro</a></li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
+                            <div class="dropdown-menu" style="padding: 15px;">
+                                <form id="form-login" action="">
+                                  <input id="usuario" style="margin-bottom: 15px;" type="text" name="usuario" size="30" placeholder="Usuario" />
+                                  <input id="pass" style="margin-bottom: 15px;" type="password" name="pass" size="30" placeholder="Contraseña" />
+                                  <input id="recordarme" style="float: left; margin-right: 10px;" type="checkbox" name="recordarme" value="1" />
+                                  <label class="string optional" for="recordarme"> Recordarme</label>
+                                 
+                                  <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Entrar" />
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
+                    <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                        <li><a href="#">Salir</a></li>
+                        <li class="divider-vertical"></li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <header class="col-md-12">
+                    <div class="row">
+                        <div id="nombre_cine" class="col-md-6"> 
+                            <h1 class="ribbon">
+                               <strong class="ribbon-content">Cinesa Proyecciones</strong>
+                            </h1>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <!--Mapa-->
+            <div class="row">
+                <div class="mapa-fluido col-md-12">
+                    <iframe src="https://mapsengine.google.com/map/embed?mid=zlHAlXcHtFBo.kECUXBROi4dU"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <!--Cartelera-->
+                    <h2>Pelis</h2>
+                    <div class="row">
+                        <div class="packery col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
+                            <div class="item" style="background-image:url('images/1/caratula.jpg'); background-size:100% auto">
+                                <a href="pelicula1.html"><img class="packery-img" src="images/1/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
+                                <div class="col-md-9">
+                                    <div class"row">Titulo: <a href="pelicula1.html">El Lado Bueno de las Cosas</a> </div> 
+                                    <div class"row">Director: David O. Russell</div>
+                                    <div class"row">Género: Comedia</div>
+                                </div>
+                                <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+                            </div>
+                            <div class="item" style="background-image:url('images/2/caratula.jpg'); background-size:100% auto">
+                                <a href="pelicula2.html"><img class="packery-img" src="images/2/caratula.jpg" title="El Mayordomo" alt="El Mayordomo"></img></a>
+                                <div class="col-md-9">
+                                    <div class"row">Titulo: <a href="pelicula2.html">El Mayordomo</a> </div>
+                                    <div class"row">Director: Lee Daniels</div>
+                                    <div class"row">Género: Drama</div>
+                                </div>
+                                <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+                            </div>
+                            <div class="item" style="background-image:url('images/3/caratula.jpg'); background-size:100% auto">
+                                <a href="pelicula3.html"><img class="packery-img" src="images/3/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
+                                <div class="col-md-9">
+                                    <div class"row">Titulo: <a href="pelicula3.html">Una Cuestión de Tiempo</a> </div>
+                                    <div class"row">Director: Richard Curtis</div>
+                                    <div class"row">Género: Romantica</div>
+                                </div>
+                                <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+                            </div>
+                            <div class="item" style="background-image:url('images/4/caratula.jpg'); background-size:100% auto">
+                                <a href="pelicula4.html"><img class="packery-img" src="images/4/caratula.jpg" title="Prisioneros" alt="Prisioneros"></img></a>
+                                <div class="col-md-9">
+                                    <div class"row">Titulo: <a href="pelicula4.html">Prisioneros</a> </div>
+                                    <div class"row">Director: Denis Villeneuve</div>
+                                    <div class"row">Género: Drama</div>
+                                </div>
+                                <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+                            </div>
+                            <div class="item" style="background-image:url('images/5/caratula.jpg'); background-size:100% auto">
+                                <a href="pelicula5.html"><img class="packery-img" src="images/5/caratula.jpg" title="Brujas de Zugarramurdi" alt="Brujas Zugarramurdi"></img></a>
+                                <div class="col-md-9">
+                                    <div class"row">Titulo: <a href="pelicula5.html">Las Brujas de Zugrramurdi</a> </div>
+                                    <div class"row">Director: Alex de la Iglesia</div>
+                                    <div class"row">Género: Comedia</div>
+                                </div>
+                                <span class="glyphicon glyphicon glyphicon-remove-circle flecha-cerrar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Comentarios -->
+            <div id="comentarios" class="row">
+                <div class="col-md-12">
+                <!--Comentarios-->
+                    <h2>Comentarios</h2>
+                    <ul id="comentarios_lista">
+                        <li class="row">
+                            <figure class="col-md-1">
+                                <img src="images/avatares/heisenberg.jpeg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                            </figure>
+                            <blockquote class="col-md-10">
+                                <p>La familia es todo</p>
+                                <span class="pull-right">5/10</span>
+                                <small><cite title="Heisenberg">Heisenberg</cite></small>
+                            </blockquote>
+                        </li>
+                        <li class="row">
+                            <figure class="col-md-1">
+                                <img src="images/avatares/pinkman.jpg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                            </figure>
+                            <blockquote class="col-md-10">
+                                <p>¿Qué? ¡vamos hombre!, eres inteligente. Tu haces veneno de frijoles. Mira, tenemos, tenemos un laboratorio entero justo aquí, ¿cierto?. ¿Que tal si tomas esos químicos y haces algo de combustible de cohetes?, así puedes enviar una señal de luz. O puedes construir una especie de robot que nos ayude, o un aparato casero, o construir una nueva batería, o... Espera. No. ¿Que tal si quitamos cosas de de la rv y construimos algo totalmente diferente?, tu sabes, como una.. como un arenero. De esa forma nos vamos en el arenero o... ¿Qué?,¿hey?, ¿qué pasa?</p>
+                                <span class="pull-right">8/10</span>
+                                <small><cite title="Pinkman">Pinkman</cite></small>
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <form role="form" class="row col-md-8 col-md-offset-2" action="">
+                      <p class="help-block pull-right" style="color:red;">Todos los campos son obligatorios</p>
+
+                      <div class="form-group">
+                        <label for="nombreForm">Nombre y apellidos</label>
+                        <input type="text" class="form-control" id="nombreForm" placeholder="Nombre y apellidos" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="comentarioForm">Comentario</label>
+                        <textarea class="form-control" id="comentarioForm" placeholder="Comentario" rows="3" required></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="puntuacionForm" class="control-label">Puntuacion:</label>
+                        <select id="puntuacionForm" name="puntuacionForm" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="site-footer">
+        ImBb 2013
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -149,6 +210,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/packery.pkgd.min.js"></script>
+    <script src="plugins/tipuesearch/tipuesearch_set.js"></script>
+    <script src="plugins/tipuesearch/tipuesearch.js"></script>
     <script src="js/cines.js"></script>
     <script src="js/comentarios.js"></script>
   </body>

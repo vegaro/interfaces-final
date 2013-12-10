@@ -11,3 +11,9 @@
 #condiciones{
     font-size: small;
 }
+#butacas{
+    display: none;
+}
+option:disabled{
+    color: red;
+}

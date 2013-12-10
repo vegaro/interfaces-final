@@ -31,13 +31,11 @@ var sesion = getUrlVars()["sesion"];
 var fecha = getUrlVars()["fecha"];
 var noentradas = getUrlVars()["noentradas"];
 var cine = getUrlVars()["cine"];
-$('#peli').val(peli);
-$('#sesion').val(decodeURIComponent(sesion));
-$('#fecha').val(decodeURIComponent(fecha));
-$('#noentradas').val(noentradas);
-$('#cine').val(cine);
+var nombre = getUrlVars()["nombre"];
+var apellidos = getUrlVars()["apellidos"];
 
-
+$('#apellidos').text(decodeURIComponent(apellidos));
+$('#nombre').text(decodeURIComponent(nombre));
 $('#pelicula').text(dictPeli[peli]);
 $('#cine-campo').text(dictCine[cine]);
 $('#sesion-campo').text(decodeURIComponent(sesion));

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/responsiveslides.css">
     <link rel="stylesheet" href="css/colorbox/colorbox.css">
     <link rel="stylesheet" href="css/peli.css">
+    <link rel="stylesheet" href="css/comentarios.css">
 </head>
 
 <body id="pelicula1">
@@ -169,6 +170,44 @@
                     <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zJue8iNcX6FU.kMNLEJWO1GZk"></iframe>
                 </div>
             </div>
+            <!-- Comentarios -->
+            <div id="comentarios" class="row">
+                <div class="col-md-12">
+                <!--Comentarios-->
+                    <h2>Comentarios</h2>
+                    <ul id="comentarios_lista">
+                        <li class="row">
+                            <figure class="col-md-1">
+                                <img src="images/avatares/heisenberg.jpeg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                            </figure>
+                            <blockquote class="col-md-10">
+                                <p>La familia es todo</p>
+                                <small><cite title="Heisenberg">Heisenberg</cite></small>
+                            </blockquote>
+                        </li>
+                        <li class="row">
+                            <figure class="col-md-1">
+                                <img src="images/avatares/pinkman.jpg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                            </figure>
+                            <blockquote class="col-md-10">
+                                <p>¿Qué? ¡vamos hombre!, eres inteligente. Tu haces veneno de frijoles. Mira, tenemos, tenemos un laboratorio entero justo aquí, ¿cierto?. ¿Que tal si tomas esos químicos y haces algo de combustible de cohetes?, así puedes enviar una señal de luz. O puedes construir una especie de robot que nos ayude, o un aparato casero, o construir una nueva batería, o... Espera. No. ¿Que tal si quitamos cosas de de la rv y construimos algo totalmente diferente?, tu sabes, como una.. como un arenero. De esa forma nos vamos en el arenero o... ¿Qué?,¿hey?, ¿qué pasa?</p>
+                                <small><cite title="Heisenberg">Heisenberg</cite></small>
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <form role="form" class="row col-md-8 col-md-offset-2" action="">
+                      <div class="form-group">
+                        <label for="nombreForm">Nombre y apellidos</label>
+                        <input type="text" class="form-control" id="nombreForm" placeholder="Nombre y apellidos" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="comentarioForm">Comentario</label>
+                        <textarea type="password" class="form-control" id="comentarioForm" placeholder="Comentario" rows="3" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
 		</div>
     </div>
     <footer class="site-footer">
@@ -183,6 +222,7 @@
     <script src="js/responsiveslides.min.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
     <script src="js/peli.js"></script>
+    <script src="js/comentarios.js"></script>
 	</body>
 
 </html>

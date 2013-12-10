@@ -1,0 +1,30 @@
+/*Comentarios*/
+#comentarios li{
+    list-style-type: none;
+}
+
+
+#comentarios figure img {
+    width: 75px;
+    height: 75px;
+}
+
+#comentarios li blockquote {
+    background-color: rgba(105, 178, 105, 0.75);
+}
+
+#comentarios li blockquote {
+    border-left: 5px solid #273A6D;
+}
+
+#comentarios li blockquote small {
+    color: black;
+}
+
+#comentarios form button{
+    float: right;
+}
+
+#comentarios_lista {
+    border-bottom: 2px solid #273A6D;
+}

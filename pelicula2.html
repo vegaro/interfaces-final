@@ -95,7 +95,7 @@
             				    <img src="images/2/caratula.jpg" alt="Caratula" style="max-width:100%; max-height:100%;"/><br>
                             </div>
                             <div class="row col-md-12">
-                                <button class="center-block btn btn-primary btn-lg youtube cboxElement" href="http://www.youtube.com/embed/fw6q_YBlJcw?rel=0&amp;wmode=transparent"">Trailer</button>
+                                <button class="center-block btn btn-primary btn-lg youtube cboxElement" href="http://www.youtube.com/embed/fw6q_YBlJcw?rel=0&amp;wmode=transparent">Trailer</button>
                             </div>
             			</div>
     		            <div class="col-md-9">
@@ -168,6 +168,63 @@
             <div class="row">
                 <div class="mapa-fluido col-md-12">
                     <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zJue8iNcX6FU.kMNLEJWO1GZk"></iframe>
+                </div>
+            </div>
+            <!-- Comentarios -->
+            <div id="comentarios" class="row">
+                <div class="col-md-12">
+                <!--Comentarios-->
+                    <h2>Comentarios</h2>
+                    <ul id="comentarios_lista">
+                        <li class="row">
+                            <figure class="col-md-1">
+                                <img src="images/avatares/heisenberg.jpeg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                            </figure>
+                            <blockquote class="col-md-10">
+                                <p>La familia es todo</p>
+                                <span class="pull-right">5/10</span>
+                                <small><cite title="Heisenberg">Heisenberg</cite></small>
+                            </blockquote>
+                        </li>
+                        <li class="row">
+                            <figure class="col-md-1">
+                                <img src="images/avatares/pinkman.jpg" title="Heisenberg" alt="Heisenberg" class="img-circle"/>
+                            </figure>
+                            <blockquote class="col-md-10">
+                                <p>¿Qué? ¡vamos hombre!, eres inteligente. Tu haces veneno de frijoles. Mira, tenemos, tenemos un laboratorio entero justo aquí, ¿cierto?. ¿Que tal si tomas esos químicos y haces algo de combustible de cohetes?, así puedes enviar una señal de luz. O puedes construir una especie de robot que nos ayude, o un aparato casero, o construir una nueva batería, o... Espera. No. ¿Que tal si quitamos cosas de de la rv y construimos algo totalmente diferente?, tu sabes, como una.. como un arenero. De esa forma nos vamos en el arenero o... ¿Qué?,¿hey?, ¿qué pasa?</p>
+                                <span class="pull-right">8/10</span>
+                                <small><cite title="Pinkman">Pinkman</cite></small>
+                            </blockquote>
+                        </li>
+                    </ul>
+                    <form role="form" class="row col-md-8 col-md-offset-2" action="">
+                      <p class="help-block pull-right" style="color:red;">Todos los campos son obligatorios</p>
+
+                      <div class="form-group">
+                        <label for="nombreForm">Nombre y apellidos</label>
+                        <input type="text" class="form-control" id="nombreForm" placeholder="Nombre y apellidos" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="comentarioForm">Comentario</label>
+                        <textarea class="form-control" id="comentarioForm" placeholder="Comentario" rows="3" required></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="puntuacionForm" class="control-label">Puntuacion:</label>
+                        <select id="puntuacionForm" name="puntuacionForm" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
             </div>
 		</div>

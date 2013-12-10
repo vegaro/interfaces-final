@@ -23,12 +23,12 @@
             </header>
         </div>
         <div class="row">
-            <form name="input" action="venta.html">
+            <form name="input" method="get" action="venta.html">
                 <div class="row col-md-12">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="tabla">Elige el cine</label>
-                                <select class="form-control" id="tabla" name="tabla" required>
+                            <label for="cine">Elige el cine</label>
+                                <select class="form-control" id="cine" name="cine" required>
                                     <option value="" disabled selected>Elige</option>
                                     <option value="heron">Cinesa Heron City</option>
                                     <option value="cinesa-proy">Cinesa Proyecciones</option>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="col-md-3 form-group" id="butacas">
                                 <label for="esiento">Butaca</label>
-                                <select class="form-control" id="asiento" name="fila" required>
+                                <select class="form-control" id="asiento" name="asiento" required>
                                     <option value="" disabled selected>Elige</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -115,9 +115,8 @@
         </div>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/compra.js"></script>
-        <script src="js/packery.pkgd.min.js"></script>
         <script src="js/bootstrap-datepicker.js"></script>
         <script src="js/compra.js"></script>
+        <script src="js/packery.pkgd.min.js"></script>        
     </body>
 </html>

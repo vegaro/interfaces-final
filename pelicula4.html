@@ -2,111 +2,189 @@
 <html lang="es">
 <head>
 <meta charset="utf-8" />
- 
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-	 <link href="css/style.css" rel="stylesheet">
-     <link rel="stylesheet" href="css/responsiveslides.css">
-    <script language="javascript" src="js/responsiveslides.min.js"></script>
-     <script>
-        $(function () {
-        $("#slider3").responsiveSlides({
-            manualControls: '#slider3-pager',
-            maxwidth: 540
-          });
-        });
-     </script>
-<title>Prisioneros</title>
+    <title>ImBb - Prisioneros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/colorbox/colorbox.css">
+    <link rel="stylesheet" href="css/peli.css">
+	<link rel="stylesheet" href="css/comentarios.css">
 </head>
 
 <body id="pelicula4">
-		<div class="container">
-			<header class="col-md-12">
-				<div class="row">
-                    <div id="nombre_cine" class="col-md-6"> 
-                        <h1 class="ribbon">
-                           <strong class="ribbon-content">Prisioneros</strong>
-                        </h1>
-                    </div>
-                </div>
-			</header>
-		<div class="col-md-12">
-		<div class="col-md-4">
-		<img src="images/4/caratula.jpg" alt = ""  /><br>
-		<!--Trailer, botón en forma de play-->
-		<a href="http://www.youtube.com/watch?v=Fy4LsPx4zac" target="_blank">Trailer: El mayordomo</a>
-		</div>
-		<div class="col-md-8">
-		<div class="row">
-		<h2>Director</h2> 
-		<p>Denis Villeneuve</p>
-		</div>
-		<div class="row">
-		<h2>Reparto</h2> 
-		<!--fotos de los protagonistas en círculos-->
-		<img src="images/4/protagonista1.jpg" alt = ""  class="img-circle"/>
-		<img src="images/4/protagonista2.jpg" alt = ""  class="img-circle"/>
-		<img src="images/4/protagonista3.jpg" alt = ""  class="img-circle"/>
-		<p> Hugh Jackman, Jake Gyllenhaal, Viola Davis, 
-			Maria Bello, Terrence Howard, Melissa Leo, Paul Dano, 
-			David Dastmalchian,Dylan Minnette, Erin Gerasimovich, 
-			Kyla Drew Simmons, Zoe Soul, Len Cariou, Wayne Duvall, Sandra Ellis Laffert 
-		</p>
-		</div>
-		<div class="row">
-		<h2>Sinopsis</h2>
-		<p> Keller Dover se enfrenta a la peor pesadilla de un padre. Anna, su hija de seis años,
-			ha desaparecido con su amiga Joy y, a medida que pasa el tiempo, el pánico lo va dominando. 
-			Desesperado, decide ocuparse personalmente del asunto. 
-			Pero, ¿hasta dónde está dispuesto a llegar para averiguar el paradero de su hija? </p>
-		</div>
-		<div class="row">
-		<h2>Comentarios</h2>
-		<textarea rows="5" cols="50"></textarea>
-		</div>
-		<div class="row"> 
-		<h2>Califique la pel�cula (estrellitas)</h2>
-		</div>
-	</div>
-	</div>
-		<div class="row">
-		<div class="col-md-12">
-		  <h2>Galer�a de fotos</h2>
-            <ul class="rslides" id="slider3">
-                <li><img src="images/4/images1.jpg" alt=""></li>
-                <li><img src="images/4/images2.jpg" alt=""></li>
-                <li><img src="images/4/images3.jpg" alt=""></li>
-				<li><img src="images/4/images4.jpg" alt=""></li>
-                <li><img src="images/4/images5.jpg" alt=""></li>
-                <li><img src="images/4/images6.jpg" alt=""></li>
-				<li><img src="images/4/images7.jpg" alt=""></li>
-            </ul>
-
-    <!-- Slideshow 3 Pager -->
-            <ul id="slider3-pager">
-                <li><a href="#"><img src="images/4/thb/images1.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/4/thb/images2.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/4/thb/images3.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/4/thb/images4.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/4/thb/images5.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/4/thb/images6.jpg" alt=""></a></li>
-				<li><a href="#"><img src="images/4/thb/images7.jpg" alt=""></a></li>
-			</ul>
-           </div>
-        </div>
-        
-		<button>comprar</button>
-
-		<div class="row">
-            <div class="col-md-12">
-                <h2>Mapa</h2>
+    <div class="page-wrap">
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ImBb</a>
             </div>
-        </div>
-		</div>
-	</div>
 
-	<script language="javascript" src="./script/script.js"></script>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cines <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul id="registro-login" class="nav navbar-nav">
+                    <li><a href="registro.html">Registro</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
+                        <div class="dropdown-menu" style="padding: 15px;">
+                            <form id="form-login" action="">
+                              <input id="usuario" style="margin-bottom: 15px;" type="text" name="usuario" size="30" placeholder="Usuario" />
+                              <input id="pass" style="margin-bottom: 15px;" type="password" name="pass" size="30" placeholder="Contraseña" />
+                              <input id="recordarme" style="float: left; margin-right: 10px;" type="checkbox" name="recordarme" value="1" />
+                              <label class="string optional" for="recordarme"> Recordarme</label>
+                             
+                              <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Entrar" />
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="registro-logout" style="display: none;" class="nav navbar-nav">
+                <p class="navbar-text">Conectado como <span id="usuario-conectado-nombre"></span></p> 
+                    <li><a href="#">Salir</a></li>
+                    <li class="divider-vertical"></li>
+                </ul>
+            </div>
+        </nav>
+		<div class="container">
+			<div class="row">
+				<header class="col-md-12">
+					<div class="row">
+			            <div id="nombre_cine" class="col-md-6"> 
+			                <h1 class="ribbon">
+			                     <strong class="ribbon-content">Prisioneros
+			                    </strong>
+			                </h1>
+			            </div>
+			        </div>
+				</header>
+			</div>
+			<div class="row">
+        		<div class="col-md-12">
+                    <div class="row">
+            			<div class="col-md-3">
+                            <div class="row col-md-12">
+            				    <img src="images/4/caratula.jpg" alt="Caratula" style="max-width:100%; max-height:100%;"/><br>
+                            </div>
+                            <div class="row col-md-12">
+                                <button class="center-block btn btn-primary btn-lg youtube cboxElement" href="http://www.youtube.com/embed/Fy4LsPx4zac?rel=0&amp;wmode=transparent"">Trailer</button>
+                            </div>
+            			</div>
+    		            <div class="col-md-9">
+    				        <div class="row">
+                                <h2>Director</h2>
+                                <div class="col-md-8">
+                                    <p>Denis Villeneuve</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="compra.html?peli=4" class="btn btn-lg btn-primary">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>Comprar Entradas
+                                    </a>
+                                </div>
+    				        </div>
+    				        <div class="row">
+    				            <h2>Reparto</h2> 
+    				            <!--fotos de los protagonistas en circulos-->
+                                <ul id="reparto" class="row col-md-12">
+                                    <li class="col-md-4">
+                                        <figure>
+                                            <img src="images/4/protagonista1.jpg" alt="Protagonista" title="Hugh Jackman" class="img-circle"/>
+                                        </figure>
+                                        <figcaption>Hugh Jackman</figcaption>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <figure>
+                                            <img src="images/4/protagonista2.jpg" alt="Protagonista" title="Jake Gyllenhaal" class="img-circle"/>
+                                        </figure>
+                                        <figcaption>Jake Gyllenhaal</figcaption>
+                                    </li>
+                                    <li class="col-md-4">
+                                        <figure>
+                                            <img src="images/4/protagonista3.jpg" alt="Protagonista" title="Viola Davis" class="img-circle"/>
+                                        </figure>
+                                        <figcaption>Viola Davis</figcaption>
+                                    </li>
+                                </ul>
+                				<p class="row col-md-12"> Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo, Paul Dano, David Dastmalchian,Dylan Minnette, Erin Gerasimovich, Kyla Drew Simmons, Zoe Soul, Len Cariou, Wayne Duvall, Sandra Ellis Laffert   </p>
+    				        </div>
+                        </div>
+                    </div>
+				    <div class="row col-md-12">
+				        <h2>Sinopsis</h2>
+				        <p> Keller Dover se enfrenta a la peor pesadilla de un padre. Anna, su hija de seis años, ha desaparecido con su amiga Joy y, a medida que pasa el tiempo, el pánico lo va dominando. Desesperado, decide ocuparse personalmente del asunto. Pero, ¿hasta dónde está dispuesto a llegar para averiguar el paradero de su hija?</p>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="row col-md-12">
+                <ul class="rslides" id="slider3">
+                    <li><img src="images/4/images1.jpg" alt=""></li>
+                    <li><img src="images/4/images2.jpg" alt=""></li>
+                    <li><img src="images/4/images3.jpg" alt=""></li>
+                    <li><img src="images/4/images4.jpg" alt=""></li>
+                    <li><img src="images/4/images5.jpg" alt=""></li>
+                    <li><img src="images/4/images6.jpg" alt=""></li>
+                    <li><img src="images/4/images7.jpg" alt=""></li>
+                </ul>
+
+                <ul id="slider3-pager">
+                    <li><a href="#"><img src="images/4/thb/images1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/4/thb/images2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/4/thb/images3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/4/thb/images4.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/4/thb/images5.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/4/thb/images6.jpg" alt=""></a></li>
+    				<li><a href="#"><img src="images/4/thb/images7.jpg" alt=""></a></li>
+    			</ul>
+            </div>
+            <!--Mapa-->
+            <div class="row">
+                <div class="mapa-fluido col-md-12">
+                    <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zJue8iNcX6FU.kMNLEJWO1GZk"></iframe>
+                </div>
+            </div>
+		</div>
+    </div>
+    <footer class="site-footer">
+        ImBb 2013
+    </footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/peli.js"></script>
+	<script src="js/comentarios.js"></script>
 	</body>
 
 </html>

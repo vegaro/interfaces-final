@@ -1,3 +1,7 @@
 #form-registro button {
     margin-top: 20px;
 }
+
+#fecha{
+    cursor: pointer;
+}

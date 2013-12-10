@@ -34,6 +34,13 @@ $( document ).ready( function() {
     $(target).toggle();
     pckry.layout();
   });
+    var usuario = localStorage.getItem('usuarioConectado');
+    // Rellenar el nombre y el apellido por defecto del usuario conectado
+    var nombre_y_apellidos = localStorage.getItem(usuario+'-nombre');
+    if (localStorage.getItem(usuario+'-apellido') !== null){
+        nombre_y_apellidos += ' ' + localStorage.getItem(usuario+'-apellido');
+    }
+    $('#nombreForm').val(nombre_y_apellidos);
 });
 
 $('form').submit(function(e) {

@@ -12,9 +12,10 @@ $('#form-registro').submit(function(e){
             // Registrar al usuario
             localStorage.setItem(usuario+'-pass', $('#form-registro [name="pass"]').val());
             localStorage.setItem(usuario+'-nombre', $('#form-registro [name="nombre"]').val());
+            localStorage.setItem(usuario+'-apellidos', $('#form-registro [name="apellido"]').val());
             // Logearlo
             localStorage.setItem('usuarioConectado', usuario);
-            window.location ="registro.html";
+            window.location.href = "index.html";
         }
     }
     event.preventDefault();

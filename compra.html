@@ -27,7 +27,7 @@
                 <div class="row col-md-12">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="cine">Elige el cine</label>
+                            <label for="cine" class="requerido">Elige el cine</label>
                                 <select class="form-control" id="cine" name="cine" required>
                                     <option value="" disabled selected>Elige</option>
                                     <option value="heron">Cinesa Heron City</option>
@@ -39,13 +39,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="fecha">Seleccione el día</label>
+                                    <label for="fecha"  class="control-label requerido">Seleccione el día</label>
                                     <input type="text" size="16" class="form-control datepicker" name="fecha" id="fecha" data-date-format="dd/mm/yyyy" data-date-weekstart="1" readonly required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="sesion">Seleccione sesion</label>
+                                    <label for="sesion"  class="control-label requerido">Seleccione sesion</label>
                                         <select class="form-control" id="sesion" name="sesion" required>
                                             <option value="" disabled selected>Elige</option>
                                             <option value="16:00">16:00</option>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <label for="noentradas">Seleccione el numero de entradas</label>
+                                <label for="noentradas"  class="control-label requerido">Seleccione el numero de entradas</label>
                                 <select class="form-control" id="noentradas" name="noentradas" required>
                                     <option value="" disabled selected>Elige</option>
                                     <option value="1">1</option>
@@ -70,7 +70,7 @@
                                 </select>
                             </div>
                             <div class="col-md-3 form-group">
-                                <label for="fila">Fila</label>
+                                <label for="fila"  class="control-label requerido">Fila</label>
                                 <select class="form-control" id="fila" name="fila" required>
                                     <option value="" disabled selected>Elige</option>
                                     <option value="1">A</option>
@@ -82,7 +82,7 @@
                                 </select>
                             </div>
                             <div class="col-md-3 form-group" id="butacas">
-                                <label for="esiento">Butaca</label>
+                                <label for="asiento"  class="control-label requerido">Butaca</label>
                                 <select class="form-control" id="asiento" name="asiento" required>
                                     <option value="" disabled selected>Elige</option>
                                     <option value="1">1</option>
@@ -110,6 +110,7 @@
                         <p>*Al realizar la compra online no se puede obtener ningún tipo de descuento (mayores de 65 años, carnet joven, familia numerosa, familia numerosa especial)</p>
                     </span>
                     <button type="submit" class="btn btn-success" value="Comprar">Comprar</button>
+					<p style="font-size: small; margin-top:15px">Los campos marcados con <span style="color: red">*</span> son obligatorios</p>
                 </div>   
             </form>
         </div>
@@ -117,6 +118,5 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-datepicker.js"></script>
         <script src="js/compra.js"></script>
-        <script src="js/packery.pkgd.min.js"></script>        
     </body>
 </html>

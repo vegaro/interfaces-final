@@ -90,9 +90,51 @@
                         <label for="busqueda"></label><br>
                         <input type="text" class="form-control" id="busqueda">
                         <button type="button" class="btn btn-default" style="display: block; margin-left:auto; margin-right:auto">Buscar</button>
-                    </div>        
+                    </div>
+                    <button class="btn btn-success" onclick="toggleAvanzada()"><span class="glyphicon glyphicon-search"></span> Búsqueda avanzada: género, directores y/o actores.</button>
+						<div id="avanzada">
+							<div class="control-group row" id="busqueda-avanzada">
+									<div class="col-md-10">
+										<label class="control-label"> Género: </label> <br>
+										<div class="radio-inline">
+											<label>
+												<input type="radio" name="form-genero" id="comedia" value="comedia" >Comedia
+											</label>
+										</div>
+										<div class="radio-inline">
+											<label>
+												<input type="radio" name="form-genero" id="drama" value="drama" >Drama
+											</label>
+										</div>
+										<div class="radio-inline">
+											<label>
+												<input type="radio" name="form-genero" id="accion" value="accion" >Acción
+											</label>
+										</div>
+										<div class="radio-inline">
+											<label>
+												<input type="radio" name="form-genero" id="romantica" value="romantica" >Romántica
+											</label>
+										</div>
+									</div>
+                                </div>
+								<div class="row">
+                                    <div class="col-md-4">
+                                        <label class="control-label" for="form-director">Director: </label>
+                                        <input type="text" class="form-control" id="form-director" name="director" placeholder="Director">
+                                    </div>
+                                </div>
+								<div class="row">
+                                    <div class="col-md-4">
+                                        <label class="control-label" for="form-actor">Actor: </label>
+                                        <input type="text" class="form-control" id="form-actor" name="actor" placeholder="Actor">
+                                    </div>
+                                </div> <br>
+							<button type="button" class="btn btn-default" style="display: block; margin-right:auto">Buscar</button>
+						</div>
                 </div>
             </div>
+			<br><br>
             <div class="row">
                 <div class="packery col-md-8 col-xs-8 col-xs-offset-2 col-md-offset-2">
                     <div class="item" style="background-image:url('images/1/caratula.jpg'); background-size:100% auto">

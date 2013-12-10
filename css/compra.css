@@ -1,12 +1,14 @@
 .precios{
     text-align: right;
-    font-size: large;
 }
 #factura{
-    background: rgba(105, 178, 105, 0.50);
+    -webkit-box-shadow: 1px 5px 10px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 1px 5px 10px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 5px 10px rgba(50, 50, 50, 0.75);
+    background-color: lightgrey;
     margin-top: 15px;
-    border:2px solid black;
-    border-radius: 15px;
+    font-size: large;
+    padding-top: 10px;
 }
 #condiciones{
     font-size: small;
